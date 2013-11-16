@@ -231,6 +231,10 @@ code {
         margin-left: auto;
         margin-right: auto;
     }
+
+    .small-footer {
+        padding-top: 20px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -258,4 +262,10 @@ code {
     #appCarousel #make-ur-own .app-image {
         padding-top: 20px;
     }
+
+    .small-footer {
+        padding-top: 20px;
+    }
+
+
 }

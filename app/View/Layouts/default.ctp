@@ -57,18 +57,29 @@
 </div>
 <div id="footer">
 	<div class="container">
-		<div class="row credit">
-			<div class="col-lg-4"><p class="text-muted">Baked
-					by <?php echo $this->Html->image('PUP-PG_23px.png', [ 'url' => 'https://www.facebook.com/PupProgrammingGuild' ]) ?>
-					with data from <?php echo $this->Html->image('data.gov.ph-logo-mini.png', [ 'url' => 'http://data.gov.ph','style' => 'vertical-align:middle;' ]); ?></p>
+		<div class="row credit hidden-xs">
+			<div class="col-sm-6"><p class="text-muted">Baked by <?php echo $this->Html->image('PUP-PG_23px.png', [ 'url' => 'https://www.facebook.com/PupProgrammingGuild', 'id' => 'pup-progguild' ]) ?> with data from <?php echo $this->Html->image('data.gov.ph-logo-mini.png', [ 'url' => 'http://data.gov.ph','style' => 'vertical-align:middle;' ]); ?></p>
 			</div>
-			<div class="col-lg-4">
+			<div class="col-sm-3">
 				<p class="text-muted">
 					<iframe src="http://ghbtns.com/github-btn.html?user=awkwardusername&repo=tapatatsapat&type=watch&count=true" height="23" width="118" frameborder="0" scrolling="0" style="width:118px; height: 23px;" allowTransparency="true" class="hidden-xs"></iframe>
 				</p>
 			</div>
-			<div class="col-lg-4"><p class="text-muted" id="somestuff"><?php echo $this->Html->image('by-sa-mini.png', [ 'url' => 'http://creativecommons.org/licenses/by-sa/3.0/ph/deed.en_US', 'style' => '']) ?></p>
+			<div class="col-sm-3"><p class="text-muted" id="somestuff"><?php echo $this->Html->image('by-sa-mini.png', [ 'url' => 'http://creativecommons.org/licenses/by-sa/3.0/ph/deed.en_US', 'style' => '']) ?></p>
+			</div>
+		</div>
+		<div class="small-footer visible-xs">
+			<div class="row">
+				<div class="col-xs-4 container">
 
+					<?php echo $this->Html->image('PUP-PG_23px.png', [ 'url' => 'https://www.facebook.com/PupProgrammingGuild', 'id' => 'pup-progguild' ]) ?>
+				</div>
+				<div class="col-xs-4 container">
+					<?php echo $this->Html->image('data.gov.ph-logo-mini.png', [ 'url' => 'http://data.gov.ph' ]) ?>
+				</div>
+				<div class="col-xs-4 container">
+					<?php echo $this->Html->image('by-sa-mini.png', [ 'url' => 'http://creativecommons.org/licenses/by-sa/3.0/ph/deed.en_US']) ?>
+				</div>
 			</div>
 		</div>
 	</div>
