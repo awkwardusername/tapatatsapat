@@ -1,0 +1,22 @@
+.painter {
+    background-color: #fff;
+}
+
+.painter tr > th {
+    background-color: #999;
+    min-width: 24px;
+    min-height: 24px;
+    border: 1px solid #ccc;
+}
+
+.painter tr > td.b0 {
+    background-color: transparent;
+}
+
+.painter tr > td.b1 {
+    background-color: #0f0;
+}
+
+.painter tr > td.b2 {
+    background-color: #ff0;
+}
