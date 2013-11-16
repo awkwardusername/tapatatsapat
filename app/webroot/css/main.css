@@ -153,6 +153,11 @@ a:visited {
     padding: 20px 20px 0;
 }
 
+#footer {
+    border-color: #333;
+    border-top: 1px solid;
+}
+
 #footer > .container {
     padding-left: 15px;
     padding-right: 15px;
@@ -222,7 +227,7 @@ code {
 @media (max-width: 480px) {
     #welcome-screen .welcome-desc {
         padding-top: 25px;
-        font-size: small;
+        font-size: medium;
     }
 
     #welcome-screen .welcome-logo {

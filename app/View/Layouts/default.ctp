@@ -64,7 +64,7 @@
 			</div>
 			<div class="col-lg-4">
 				<p class="text-muted">
-					<iframe src="http://ghbtns.com/github-btn.html?user=awkwardusername&repo=tapatatsapat&type=watch&count=true" height="23" width="118" frameborder="0" scrolling="0" style="width:118px; height: 23px;" allowTransparency="true"></iframe>
+					<iframe src="http://ghbtns.com/github-btn.html?user=awkwardusername&repo=tapatatsapat&type=watch&count=true" height="23" width="118" frameborder="0" scrolling="0" style="width:118px; height: 23px;" allowTransparency="true" class="hidden-xs"></iframe>
 				</p>
 			</div>
 			<div class="col-lg-4"><p class="text-muted" id="somestuff"><?php echo $this->Html->image('by-sa-mini.png', [ 'url' => 'http://creativecommons.org/licenses/by-sa/3.0/ph/deed.en_US', 'style' => '']) ?></p>
