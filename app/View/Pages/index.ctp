@@ -4,7 +4,7 @@
 			<div class="col-xs-3 welcome-logo">
 				<?php echo $this->Html->image('tas-logo-main.png'); ?>
 			</div>
-			<div class="col-xs-5">
+			<div class="col-md-5">
 				<p class="welcome-desc">An interactive course for learning and knowing how the government of the
 					Philippines plan to make and spend the budget.</p>
 				<p><a class="btn btn-primary btn-lg next-page">Explore</a></p>
@@ -104,7 +104,7 @@
 							<strong>
 								<p id="dev-pics-img"><img data-src="holder.js/100x100"/></p>
 
-								<p id="dev-name">Mark Jayson
+								<p id="dev-name">Mark Jayson<br />
 									<a href="https://twitter.com/the_dead_poetic" class="twitter-follow-button"
 									   data-show-count="false" data-show-screen-name="false">Follow</a>
 									<script>!function (d, s, id) {
@@ -125,8 +125,8 @@
 							<strong>
 								<p id="dev-pics-img"><img data-src="holder.js/100x100"/></p>
 
-								<p id="dev-name">Mark Jayson
-									<a href="https://twitter.com/the_dead_poetic" class="twitter-follow-button"
+								<p id="dev-name">Allan<br />
+									<a href="https://twitter.com/temotoKun" class="twitter-follow-button"
 									   data-show-count="false" data-show-screen-name="false">Follow</a>
 									<script>!function (d, s, id) {
 											var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
@@ -149,8 +149,8 @@
 							<strong>
 								<p id="dev-pics-img"><img data-src="holder.js/100x100"/></p>
 
-								<p id="dev-name">Mark Jayson
-									<a href="https://twitter.com/the_dead_poetic" class="twitter-follow-button"
+								<p id="dev-name">Jeremiah<br />
+									<a href="https://twitter.com/engjehneer" class="twitter-follow-button"
 									   data-show-count="false" data-show-screen-name="false">Follow</a>
 									<script>!function (d, s, id) {
 											var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
@@ -165,7 +165,7 @@
 							</strong>
 						</div>
 					</div>
-					<div class="col-xs-6">
+					<!--<div class="col-xs-6">
 						<div class="row author-item">
 							<strong>
 								<p id="dev-pics-img"><img data-src="holder.js/100x100"/></p>
@@ -185,7 +185,7 @@
 								</p>
 							</strong>
 						</div>
-					</div>
+					</div>-->
 				</div>
 			</div>
 			<!-- class="dev-pics" -->
