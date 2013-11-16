@@ -1,0 +1,3 @@
+PNOYellow - RGB(255,202,8)
+Not really gray - RGB(57,48,42)
+Orange na maganda - RGB(248,147,29)
