@@ -22,4 +22,8 @@ class PagesController extends AppController {
 	public function visualize() {
 		$this->set('title_for_layout', 'T/S: Budget Visualizer');
 	}
+
+	public function present() {
+		$this->layout = 'null';
+	}
 }

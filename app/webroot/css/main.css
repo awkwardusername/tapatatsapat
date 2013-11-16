@@ -126,6 +126,15 @@ a:visited {
     text-align: center;
 }
 
+.app-title {
+    font-size: x-large;
+    font-weight: 700;
+}
+
+.app-desc {
+    font-size: medium;
+}
+
 #the-devs {
     background: #8abf05;
     color: #ffffe5;

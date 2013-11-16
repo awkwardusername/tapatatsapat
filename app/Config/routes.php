@@ -32,6 +32,8 @@ Router::connect('/index', ['controller' => 'pages']);
 
 Router::connect('/process', ['controller' => 'pages', 'action' => 'process']);
 
+Router::connect('/present', ['controller' => 'pages', 'action' => 'present']);
+
 Router::connect('/make', ['controller' => 'pages', 'action' => 'make']);
 
 Router::connect('/visualize', ['controller' => 'pages', 'action' => 'visualize']);
