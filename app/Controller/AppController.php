@@ -28,4 +28,5 @@ class AppController extends Controller {
 		'Form' => array('className' => 'BoostCake.BoostCakeForm'),
 		'Paginator' => array('className' => 'BoostCake.BoostCakePaginator'),
 	);*/
+	public $API_KEY = '527b1d7a5e13db3c5f490b9a';
 }

@@ -1,7 +1,13 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: hoshi~
- * Date: 11/16/13
- * Time: 11:14 AM
- */ 
+	echo $this->Html->css('visualize', null, ['inline' => 'false']);
+?>
+
+<div class="row visualizer">
+	<div class="col-sm-4 sidebar">
+		
+	</div>
+	<div class="col-sm-8 viewport">
+
+	</div>
+</div>
+
