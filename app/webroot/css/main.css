@@ -1,5 +1,23 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700);
 
+@-webkit-viewport {
+    width: device-width;
+}
+@-moz-viewport {
+    width: device-width;
+}
+@-ms-viewport {
+    width: device-width;
+}
+
+@-o-viewport {
+    width: device-width;
+}
+
+@viewport {
+    width: device-width;
+}
+
 html,
 body {
     height: 100%;
@@ -57,7 +75,7 @@ a:visited {
 }
 
 #welcome-screen .welcome-logo {
-
+    width: auto;
 }
 
 #welcome-screen .welcome-desc {
@@ -149,24 +167,6 @@ code {
     font-size: 80%;
 }
 
-@-webkit-viewport {
-    width: device-width;
-}
-@-moz-viewport {
-    width: device-width;
-}
-@-ms-viewport {
-    width: device-width;
-}
-
-@-o-viewport {
-    width: device-width;
-}
-
-@viewport {
-    width: device-width;
-}
-
 /**** Responsive ajdbsha */
 
 @media (max-width: 768px) {
@@ -175,8 +175,7 @@ code {
     }
 
     #welcome-screen .welcome-desc {
-        padding-top: 150px;
-        margin-right: auto;
+        font-size: medium;
     }
 
     /* Bump up size of carousel content */
@@ -221,8 +220,13 @@ code {
 }
 
 @media (max-width: 480px) {
-    #welcome-desc {
+    #welcome-screen .welcome-desc {
+        padding-top: 25px;
         font-size: small;
+    }
+
+    #welcome-screen .welcome-logo {
+        float: none;
     }
 
     #welcome-screen .container {

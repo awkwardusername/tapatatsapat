@@ -4,7 +4,7 @@
 			<div class="col-xs-3 welcome-logo">
 				<?php echo $this->Html->image('tas-logo-main.png'); ?>
 			</div>
-			<div class="col-xs-5">
+			<div class="col-md-5">
 				<p class="welcome-desc">An interactive course for learning and knowing how the government of the
 					Philippines plan to make and spend the budget.</p>
 				<p><a class="btn btn-primary btn-lg next-page">Explore</a></p>
