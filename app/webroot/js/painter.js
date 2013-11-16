@@ -30,7 +30,6 @@
          */
         var repaint = function () {
             _e
-                .html(Tile.getBudgetName(_b))
                 .addClass("b" + _b);
         };
 
@@ -73,30 +72,9 @@
          * Gets the element associated with this tile.
          * @returns {jQuery|*}
          */
-        this.getElement = function () {
+        this.el = function () {
             return _e;
         };
-    };
-
-
-    /* ===== static members ===== */
-
-
-    Tile.budgetDesc = [
-        { name: "No Budget", bgColor: "#FFF", borderColor: "#EEE" },
-        { name: "Budget 1", bgColor: "#0F0", borderColor: "#0E0" },
-        { name: "Budget 2", bgColor: "#FF0", borderColor: "#EE0" },
-        { name: "Budget 3", bgColor: "#0FF", borderColor: "#0EE" }
-    ];
-
-    Tile.getBudgetName = function (i) {
-        return Tile.budgetDesc[i].name
-    };
-    Tile.getBudgetBackColor = function (i) {
-        return Tile.budgetDesc[i].bgColor
-    };
-    Tile.getBudgetBorderColor = function (i) {
-        return Tile.budgetDesc[i].bgColor
     };
 
 
@@ -135,7 +113,7 @@
             _tiles[i] = t;
         };
 
-        this.getElement = function() {
+        this.el = function() {
             return _e;
         };
 
@@ -184,8 +162,15 @@
             _tiles[i] = t;
         };
 
-        this.getElement = function() {
+        this.el = function() {
             return _e;
+        };
+
+        this.getTileElements = function() {
+            var e = [];
+            for(var i in _tiles)
+                e.push(_tiles[i].el()[0]);
+            return jQuery(e);
         };
 
         this.getHeader = function() {
@@ -205,22 +190,22 @@
      */
 
 
-    /* ===============
-     * Painter - Start
-     * ===============
+    /* =====================
+     * PainterCanvas - Start
+     * =====================
      */
 
 
-    var Painter = function (e, options) {
+    var PainterCanvas = function (options) {
 
 
         /* ===== instance members ===== */
 
         /* ----- fields ----- */
 
-        var _e = jQuery(e);
-        var _canvas;
+        var _e = jQuery("<table></table>");
         var _tileCount = options.data ? options.data.length : options.tileCount;
+        var _minSize = 1;
         var _maxSize = 20;
         var _headerColor = "#ccc";
         var _width = options.width ? options.width : "75%";
@@ -228,6 +213,8 @@
         var _rows = [];
         var _cols = [];
         var _currentBudget = 1;
+        var _effect = "blind";
+        var _delay = 50;
 
 
         /* ----- private methods ----- */
@@ -274,10 +261,77 @@
         };
 
         var doResize = function(s) {
-            for(var i = s; i < _maxSize; i++) {
-                getRow(i).toggleClass("hidden-xs");
-                getColumn(i).toggleClass("hidden-xs");
+            var oldValue = _tileCount;
+            _tileCount = s;
+            repaint(oldValue - 1);
+        };
+
+        var resizeCanvas = function() {
+            _e.css({
+                height: _e.width()
+            });
+        };
+
+        var animateRow = function(i, smaller) {
+            if(i == _tileCount - (smaller ? 1 : 0))
+                return;
+            if(smaller)
+                getRow(i).el()
+                    .hide(_effect, { duration: _delay, direction: "up", complete: function() { animateRow(i - 1, smaller); } });
+            else
+                getRow(i).el()
+                    .show(_effect, { duration: _delay, direction: "down", complete: function() { animateRow(i + 1, smaller); } });
+        };
+
+        var animateColumn = function(i, smaller) {
+            if(i == _tileCount - (smaller ? 1 : 0))
+                return;
+
+            if(smaller) {
+                getColumn(i).getHeader()
+                    .hide(
+                    _effect,
+                    {
+                        duration: _delay,
+                        direction: "left",
+                        complete: function() { animateColumn(i - 1, smaller); }
+                    }
+                );
+                getColumn(i).getTileElements()
+                    .hide(
+                    _effect,
+                    {
+                        duration: _delay,
+                        direction: "left"
+                    }
+                );
             }
+            else {
+                getColumn(i).getHeader()
+                    .show(
+                    _effect,
+                    {
+                        duration: _delay,
+                        direction: "right",
+                        complete: function() { animateColumn(i + 1, smaller); }
+                    }
+                );
+                getColumn(i).getTileElements()
+                    .show(
+                    _effect,
+                    {
+                        duration: _delay,
+                        direction: "right"
+                    }
+                );
+            }
+        };
+
+        var repaint = function(oldValue) {
+            var smaller = _tileCount < oldValue;
+            animateRow(oldValue, smaller);
+            animateColumn(oldValue, smaller);
+            resizeCanvas();
         };
 
 
@@ -293,32 +347,34 @@
         /* ----- constructor body ----- */
 
         (function() {
-            _canvas = jQuery("<table></table>")
-                .attr("class", "painter")
+            _e
                 .css({
                     margin: "0 auto",
                     width: _width
                 })
+                .css({ height: $(this).width() })
                 .appendTo(_e);
 
             // be responsive when resizing
             $(window).on("resize", function () {
-                _canvas.find("td").css({
-                    height: _canvas.width() / _maxSize + "px"
+                _e.find("td").css({
+                    height: _e.width() / _maxSize + "px"
                 });
             });
 
             // instantiate tiles
             instantiateTiles();
 
-            _colGroups[0].appendTo(_canvas);
+            _colGroups[0].appendTo(_e);
 
             var colHeaderRow = jQuery("<tr></tr>");
 
-            colHeaderRow.appendTo(_canvas);
+            colHeaderRow.appendTo(_e);
 
             jQuery("<th></th>")
                 .appendTo(colHeaderRow)
+                .addClass("row-header")
+                .addClass("col-header")
                 .html("&nbsp;");
 
             $.each(_cols, function(x) {
@@ -330,22 +386,24 @@
             });
 
             $.each(_rows, function (y) {
-                _rows[y].getElement().appendTo(_canvas);
+                _rows[y].el().appendTo(_e);
                 _rows[y].getHeader().
-                    appendTo(_rows[y].getElement()).
+                    appendTo(_rows[y].el()).
                     bind("click", function() {
                         _rows[y].setBudget(_currentBudget);
                     });
                 $.each(_cols, function (x) {
-                    _cols[x].getElement().appendTo(_colGroups[0]);
+                    _cols[x].el().appendTo(_colGroups[0]);
 
                     tile(x, y)
-                        .getElement()
-                        .appendTo(_rows[y].getElement())
+                        .el()
+                        .appendTo(_rows[y].el())
+                        /*
                         .css({
-                            width: 100 / _maxSize + "%",
-                            height: _canvas.width() / _maxSize + "px"
+                            width: 100 / _tileCount + "%",
+                            height: _canvas.width() / _tileCount + "px"
                         })
+                        */
                         .bind("click", evtPaintBudget = function() {
                             tile(x, y).setBudget(_currentBudget);
                         })
@@ -356,7 +414,7 @@
                             }
                         })
                         .bind("mouseup", function() { document.selection.removeAllRanges() });
-                })
+                });
             });
         })();
 
@@ -372,26 +430,112 @@
             doSetBudget(x, y, b);
         };
 
+        this.getCurrentBudget = function() {
+            return _currentBudget;
+        }
+
+        this.setCurrentBudget = function(b) {
+            _currentBudget = b;
+        }
+
+        this.el = function() { return _e; };
+
+        this.getSize = function() { return _tileCount; };
+
         this.setSize = function(s) {
             doResize(s);
         };
+
+        this.getMinimumSize = function() { return _minSize; };
+
+        this.getMaximumSize = function() { return _maxSize; };
+    };
+
+
+    /* ===================
+     * PainterCanvas - End
+     * ===================
+     */
+
+
+    /* ===============
+     * Painter - Start
+     * ===============
+     */
+
+
+    var Painter = function(e, p, options) {
+        var _canvasCont = jQuery("<div></div>");
+        var _sidebarCont = jQuery("<div></div>");
+
+        var _e = jQuery(e);
+        var _palette = p;
+        var _pe = jQuery("<ul></ul>");
+        var _canvas;
+        var _currentBudget = 1;
+
+        var _size = 10;
+        var _sze = jQuery("<select></select>");
+
+        var doSetCurrentBudget = function(b) {
+            _currentBudget = b;
+            _canvas.setCurrentBudget(b);
+        };
+
+        _e.attr("class", "painter");
+
+        _canvasCont
+            .attr("class", "col-xs-8")
+            .appendTo(_e);
+
+        _canvas = new PainterCanvas(options);
+        _canvas.el().appendTo(_canvasCont);
+
+        _sidebarCont
+            .attr("class", "col-xs-4")
+            .appendTo(_e);
+
+        _palette.unshift({ name: "Unallocated", color: "transparent" });
+
+        _pe
+            .appendTo(_sidebarCont);
+
+        for(var sz = _canvas.getMinimumSize(); sz <= _canvas.getMaximumSize(); sz++)
+            _sze
+                .append(jQuery("<option></option>")
+                    .val(sz)
+                    .text(sz + "x" + sz)
+                    .attr("selected", function() { return sz == _canvas.getSize(); }))
+                .bind("change", function() { _canvas.setSize(jQuery(this).val()); });
+        _sze.appendTo(_sidebarCont);
+
+        $.each(_palette, function(i) {
+            var pcol = jQuery("<li></li>");
+            var pname = jQuery("<strong></strong>")
+                .attr("class", "budget-name")
+                .text(_palette[i].name)
+                .appendTo(pcol);
+            var ppcent = jQuery("<strong></strong>")
+                .attr("class", "budget-percent")
+                .text("5")
+                .appendTo(pcol);
+
+            pcol
+                .bind("click", function() {
+                    doSetCurrentBudget(i);
+                })
+                .appendTo(_pe);
+        });
+
+
+
+
+        this.el = function() { return _e; }
     };
 
 
     /* =============
      * Painter - End
      * =============
-     */
-
-
-    /* ===================
-     * Custom Code - Start
-     * ===================
-     */
-
-
-    /* =================
-     * Custom Code - End
-     * =================
      */
 //})();
