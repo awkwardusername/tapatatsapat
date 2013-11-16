@@ -41,7 +41,7 @@
 					<ul class="nav navbar-nav">
 						<li class="active"><a href="#" title="Home"><span class="glyphicon glyphicon-home"></span></a></li>
 						<li><a href="process" title="The Budget Process"><span class="glyphicon glyphicon-refresh"></span> Process</a></li>
-						<li><a href="#make" title="Make your own budget!"><span class="glyphicon glyphicon-cog"></span> Make</a></li>
+						<li><a href="make" title="Make your own budget!"><span class="glyphicon glyphicon-cog"></span> Make</a></li>
 						<li><a href="#visualize" title="Budget Visualizer"><span class="glyphicon glyphicon-stats"></span> Visualize</a></li>
 					</ul>
 				</div>
