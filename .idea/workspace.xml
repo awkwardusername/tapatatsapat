@@ -50,19 +50,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="bootstrap.php" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/Config/bootstrap.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="110" column="3" selection-start="5221" selection-end="5221" vertical-scroll-proportion="4.5416665" vertical-offset="1414" max-vertical-offset="2362">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="AppController.php" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="AppController.php" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/Controller/AppController.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="12" column="3" selection-start="221" selection-end="221" vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="1042">
+                <state line="17" column="2" selection-start="349" selection-end="349" vertical-scroll-proportion="0.45373666" vertical-offset="0" max-vertical-offset="1042">
                   <folding>
                     <element signature="e#6#176#0" expanded="true" />
                   </folding>
@@ -81,10 +72,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="visualize.js" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="visualize.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/webroot/js/visualize.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="5" column="3" selection-start="77" selection-end="77" vertical-scroll-proportion="0.07964602" vertical-offset="0" max-vertical-offset="625">
+                <state line="5" column="0" selection-start="74" selection-end="74" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="625">
                   <folding>
                     <element signature="e#0#41#0" expanded="false" />
                   </folding>
@@ -500,7 +491,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="-4" width="1374" height="736" extended-state="7" />
+    <frame x="-4" y="-4" width="1374" height="736" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -614,13 +605,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/View/Pages/process.ctp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="22" selection-start="67" selection-end="67" vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="667">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/webroot/css/visualize.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="21" selection-start="254" selection-end="254" vertical-scroll-proportion="0.4095563" vertical-offset="0" max-vertical-offset="886">
@@ -656,15 +640,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Controller/AppController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="3" selection-start="221" selection-end="221" vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="1042">
-          <folding>
-            <element signature="e#6#176#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/webroot/js/painter.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6505">
@@ -676,9 +651,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/webroot/js/visualize.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="3" selection-start="77" selection-end="77" vertical-scroll-proportion="0.07964602" vertical-offset="0" max-vertical-offset="625">
+        <state line="5" column="0" selection-start="74" selection-end="74" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="625">
           <folding>
             <element signature="e#0#41#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/View/Pages/process.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="22" selection-start="67" selection-end="67" vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="667">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Controller/AppController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="2" selection-start="349" selection-end="349" vertical-scroll-proportion="0.45373666" vertical-offset="0" max-vertical-offset="1042">
+          <folding>
+            <element signature="e#6#176#0" expanded="true" />
           </folding>
         </state>
       </provider>
