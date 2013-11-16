@@ -22,17 +22,33 @@
 
 .painter ul > li {
     display: block;
+    clear: right;
+}
+
+.painter ul > li.selected {
+    background-color: Highlight;
+    color: HighlightText;
 }
 
 .painter ul > li > .budget-name {
-    display: inline-block;
-    width: 50%;
+    display: block;
+    clear: none;
+}
+
+.painter ul > li > .budget-money {
+    display: block;
+    clear: none;
+}
+
+.painter ul > li > .budget-money:before {
+    content: "PhP ";
 }
 
 .painter ul > li > .budget-percent {
+    display: block;
     font-size: 300%;
     font-weight: 200;
-    vertical-align: middle;
+    text-align: right;
 }
 
 .painter ul > li > .budget-percent:after {

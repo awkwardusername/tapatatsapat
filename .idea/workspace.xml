@@ -2,23 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4b57316-fe81-44d9-9721-ad79df38bd2c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/webroot/css/process.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/webroot/css/visualize.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/webroot/js/visualize.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Controller/AppController.php" afterPath="$PROJECT_DIR$/app/Controller/AppController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/View/Layouts/default.ctp" afterPath="$PROJECT_DIR$/app/View/Layouts/default.ctp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/webroot/css/main.css" afterPath="$PROJECT_DIR$/app/webroot/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/View/Pages/process.ctp" afterPath="$PROJECT_DIR$/app/View/Pages/process.ctp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/View/Pages/visualize.ctp" afterPath="$PROJECT_DIR$/app/View/Pages/visualize.ctp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/webroot/css/painter.css" afterPath="$PROJECT_DIR$/app/webroot/css/painter.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/webroot/js/painter.js" afterPath="$PROJECT_DIR$/app/webroot/js/painter.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="TapatAtSapat.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="c4b57316-fe81-44d9-9721-ad79df38bd2c" time="1384619115653" ignored="false" />
+    <file path="/Dummy.txt" changelist="c4b57316-fe81-44d9-9721-ad79df38bd2c" time="1384639634266" ignored="false" />
     <file path="/AppController.php" changelist="c4b57316-fe81-44d9-9721-ad79df38bd2c" time="1384573223061" ignored="false" />
-    <file path="/painter.js" changelist="c4b57316-fe81-44d9-9721-ad79df38bd2c" time="1384633299638" ignored="false" />
-    <file path="/painter.css" changelist="c4b57316-fe81-44d9-9721-ad79df38bd2c" time="1384632903665" ignored="false" />
+    <file path="/painter.js" changelist="c4b57316-fe81-44d9-9721-ad79df38bd2c" time="1384644702024" ignored="false" />
+    <file path="/painter.css" changelist="c4b57316-fe81-44d9-9721-ad79df38bd2c" time="1384643752547" ignored="false" />
     <file path="/make.ctp" changelist="c4b57316-fe81-44d9-9721-ad79df38bd2c" time="1384632107492" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -55,7 +48,7 @@
       <file leaf-file-name="painter.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/webroot/js/painter.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="523" column="29" selection-start="13185" selection-end="13185" vertical-scroll-proportion="0.68035716">
+            <state line="524" column="10" selection-start="13127" selection-end="13127" vertical-scroll-proportion="0.63418806">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -66,7 +59,7 @@
       <file leaf-file-name="painter.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/webroot/css/painter.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="17" selection-start="491" selection-end="491" vertical-scroll-proportion="0.0">
+            <state line="47" column="19" selection-start="736" selection-end="736" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -84,10 +77,8 @@
       <file leaf-file-name="index.ctp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/View/Pages/index.ctp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="30" selection-start="1041" selection-end="1041" vertical-scroll-proportion="0.0">
-              <folding>
-                <marker date="1384598098850" expanded="true" signature="5481:5826" placeholder="{...}" />
-              </folding>
+            <state line="65" column="113" selection-start="2296" selection-end="2296" vertical-scroll-proportion="-8.041667">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -214,14 +205,14 @@
   </component>
   <component name="PropertiesComponent">
     <property name="PluginDummyText.Genre" value="scifi" />
-    <property name="options.splitter.main.proportions" value="0.3" />
     <property name="full.screen.before.presentation.mode" value="false" />
+    <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="preferences.fileTypes" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="FullScreen" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -277,15 +268,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="1" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3289689" sideWeight="0.84166664" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1500732" sideWeight="0.6710311" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14934114" sideWeight="0.6710311" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3282313" sideWeight="0.79721814" order="8" side_tool="true" content_ui="tabs" />
@@ -295,8 +285,9 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3289689" sideWeight="0.84166664" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="CSS Styles" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31083202" sideWeight="0.79941434" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -400,11 +391,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/View/Pages/process.ctp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="186" column="0" selection-start="5006" selection-end="5006" vertical-scroll-proportion="0.94163424" />
-      </provider>
       <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
         <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="186" column="0" selection-start="5006" selection-end="5006" vertical-scroll-proportion="0.94163424" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/View/Pages/visualize.ctp">
@@ -431,9 +422,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/View/Layouts/default.ctp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="4" selection-start="2961" selection-end="2961" vertical-scroll-proportion="0.69160587">
-          <folding />
-        </state>
+        <state line="79" column="4" selection-start="2961" selection-end="2961" vertical-scroll-proportion="0.69160587" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/webroot/js/jquery-ui-1.10.3.custom.js">
@@ -443,18 +432,6 @@
             <element signature="n#!!doc" expanded="false" />
           </folding>
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/View/Pages/index.ctp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="30" selection-start="1041" selection-end="1041" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1384598098850" expanded="true" signature="5481:5826" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Controller/PagesController.php">
@@ -471,16 +448,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/View/Pages/index.ctp">
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="65" column="113" selection-start="2296" selection-end="2296" vertical-scroll-proportion="-8.041667">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/webroot/css/painter.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="17" selection-start="491" selection-end="491" vertical-scroll-proportion="0.0">
+        <state line="47" column="19" selection-start="736" selection-end="736" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/webroot/js/painter.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="523" column="29" selection-start="13185" selection-end="13185" vertical-scroll-proportion="0.68035716">
+        <state line="524" column="10" selection-start="13127" selection-end="13127" vertical-scroll-proportion="0.63418806">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>

@@ -252,11 +252,11 @@
             tile(x, y).setBudget(b);
         };
 
-        var getRow = function(r) {
+        var doGetRow = function(r) {
             return _rows[r];
         };
 
-        var getColumn = function(c) {
+        var doGetColumn = function(c) {
             return _cols[c];
         };
 
@@ -276,10 +276,10 @@
             if(i == _tileCount - (smaller ? 1 : 0))
                 return;
             if(smaller)
-                getRow(i).el()
+                doGetRow(i).el()
                     .hide(_effect, { duration: _delay, direction: "up", complete: function() { animateRow(i - 1, smaller); } });
             else
-                getRow(i).el()
+                doGetRow(i).el()
                     .show(_effect, { duration: _delay, direction: "down", complete: function() { animateRow(i + 1, smaller); } });
         };
 
@@ -288,7 +288,7 @@
                 return;
 
             if(smaller) {
-                getColumn(i).getHeader()
+                doGetColumn(i).getHeader()
                     .hide(
                     _effect,
                     {
@@ -297,7 +297,7 @@
                         complete: function() { animateColumn(i - 1, smaller); }
                     }
                 );
-                getColumn(i).getTileElements()
+                doGetColumn(i).getTileElements()
                     .hide(
                     _effect,
                     {
@@ -307,7 +307,7 @@
                 );
             }
             else {
-                getColumn(i).getHeader()
+                doGetColumn(i).getHeader()
                     .show(
                     _effect,
                     {
@@ -316,7 +316,7 @@
                         complete: function() { animateColumn(i + 1, smaller); }
                     }
                 );
-                getColumn(i).getTileElements()
+                doGetColumn(i).getTileElements()
                     .show(
                     _effect,
                     {
@@ -449,6 +449,27 @@
         this.getMinimumSize = function() { return _minSize; };
 
         this.getMaximumSize = function() { return _maxSize; };
+
+        this.getPortion = function(b) {
+            var bt = 0;
+            for(var y = 0; y < _tileCount; y++)
+                for(var x = 0; x < _tileCount; x++)
+                    if(tile(x, y).getBudget() == b)
+                        bt++;
+            return bt / Math.pow(_tileCount, 2);
+        };
+
+        this.getRow = function(r) {
+            return doGetRow(r);
+        };
+
+        this.getColumn = function(c) {
+            return doGetColumn(c);
+        };
+
+        this.getTile = function(x, y) {
+            return doGetRow(y).getTile(x);
+        };
     };
 
 
@@ -471,8 +492,9 @@
         var _e = jQuery(e);
         var _palette = p;
         var _pe = jQuery("<ul></ul>");
-        var _canvas;
+        var _canvas = new PainterCanvas(options);;
         var _currentBudget = 1;
+        var _totalBudget = 2270000000000;
 
         var _size = 10;
         var _sze = jQuery("<select></select>");
@@ -480,6 +502,30 @@
         var doSetCurrentBudget = function(b) {
             _currentBudget = b;
             _canvas.setCurrentBudget(b);
+
+            _pe.find("li").removeClass("selected");
+
+            _pe.find("#palette-" + _currentBudget).addClass("selected");
+        };
+
+        var updatePalette = function() {
+
+
+            for(var i in _palette) {
+                _pe
+                    .find("#palette-" + i)
+                    .find(".budget-percent")
+                    .text((_canvas.getPortion(i) * 100).toFixed(2));
+
+                _pe
+                    .find("#palette-" + i)
+                    .find(".budget-money")
+                    .text((_canvas.getPortion(i) * _totalBudget / 1000000000).toFixed(2) + "B");
+            }
+        };
+
+        var evtUpdatePalette = function() {
+            updatePalette();
         };
 
         _e.attr("class", "painter");
@@ -488,7 +534,6 @@
             .attr("class", "col-xs-8")
             .appendTo(_e);
 
-        _canvas = new PainterCanvas(options);
         _canvas.el().appendTo(_canvasCont);
 
         _sidebarCont
@@ -515,20 +560,36 @@
                 .attr("class", "budget-name")
                 .text(_palette[i].name)
                 .appendTo(pcol);
+            var pmoney = jQuery("<strong></strong>")
+                .attr("class", "budget-money")
+                .text((_canvas.getPortion(i) * _totalBudget / 1000000000).toFixed(2) + "B")
+                .appendTo(pcol);
             var ppcent = jQuery("<strong></strong>")
                 .attr("class", "budget-percent")
-                .text("5")
+                .text((_canvas.getPortion(i) * 100).toFixed(2))
                 .appendTo(pcol);
 
             pcol
+                .attr("id", "palette-" + i)
                 .bind("click", function() {
                     doSetCurrentBudget(i);
                 })
                 .appendTo(_pe);
+
+            if(i == 1)
+                pcol.addClass("selected");
         });
 
+        for(var y = 0; y < _canvas.getMaximumSize(); y++) {
+            _canvas.getRow(y).getHeader().bind("click", evtUpdatePalette);
+            for(var x = 0; x < _canvas.getMaximumSize(); x++) {
+                _canvas.getColumn(x).getHeader().bind("click", evtUpdatePalette);
 
-
+                _canvas.getTile(x, y).el()
+                    .bind("click", evtUpdatePalette)
+                    .bind("mouseup", evtUpdatePalette)
+            }
+        }
 
         this.el = function() { return _e; }
     };
