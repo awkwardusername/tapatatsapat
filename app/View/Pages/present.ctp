@@ -9,22 +9,22 @@
 	<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
 	<meta name="author" content="Hakim El Hattab">
 
-	<meta name="apple-mobile-web-app-capable" content="yes" />
-	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-<!--	<link rel="stylesheet" href="css/reveal.min.css">
-	<link rel="stylesheet" href="css/theme/default.css" id="theme">-->
-
 	<?php
-		echo $this->Html->css(['reveal.min.css', 'theme/night.css'], ['id' => 'theme'])
+	echo $this->Html->css([ 'reveal.min.css', 'theme/moon.css' ], [ 'id' => 'theme' ])
 	?>
 
-	<!-- If the query includes 'print-pdf', use the PDF print sheet -->
-	<script>
-		document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
-	</script>-->
+	<style type="text/css">
+		.reveal section img {
+			background: none;
+			border: 0;
+
+		}
+	</style>
 
 	<!--[if lt IE 9]>
 	<script src="lib/js/html5shiv.js"></script>
@@ -35,320 +35,240 @@
 
 <div class="reveal">
 
-<!-- Any section element inside of this container is displayed as a slide -->
 <div class="slides">
-<section>
-	<h1>Reveal.js</h1>
-	<h3>HTML Presentations Made Easy</h3>
-	<p>
-		<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
-	</p>
+<section data-background-color="rgba( 0, 0, 0, 0.6 )">&nbsp;<img class="absolute-element" style="margin-top: 120px; margin-right: 9999px; width: 500px; z-index: 4; max-height: none; max-width: none;"
+                                                                 src="https://s3.amazonaws.com/media-p.slid.es/uploads/jeremiahtabing/images/156095/logo.png">&nbsp;
+	<h1 class="absolute-element"
+	    style="left: 532px; top: 401px; height: 122px; position: absolute; z-index: 7; max-height: none; max-width: none; text-align: left; margin-right: 100px;">
+		BUDGET PROCESS
+	</h1>
 </section>
-
 <section>
-	<h2>Heads Up</h2>
-	<p>
-		reveal.js is a framework for easily creating beautiful presentations using HTML. You'll need a browser with
-		support for CSS 3D transforms to see it in its full glory.
-	</p>
+	<section>&nbsp;
+		<h2 class="absolute-element"
+		    style="height: 61px; position: absolute; z-index: 4; max-height: none; max-width: none; color: #ffcc00">Step # 1
+		</h2>
+		<font color="#ffff00" style="font-size: 72px;">
+			<h2 class="absolute-element"
+			    style="text-align: right; z-index: 4; max-height: none; max-width: none; color=#ffff00">BUDGET PREPARATION
+			</h2>
+		</font>
+	</section>
+	<section>&nbsp;<h2 class="absolute-element" style="text-align: left; margin-top: 70px; top: 159px; height: 89px; position: absolute; z-index: 4;">
+			<font color="#ff9900" style="font-size: 112px;">Budget<p>CALL</p></font>
+		</h2>
+		<p class="absolute-element" color="#666666"
+		      style="margin-top: 30px; top: 413px; text-align: left; font-size: 29px; position: absolute; z-index: 4;">DBM
+			issues national budget call to<br /> government agencies which compel<br /> all agency to submit their budget<br />
+			proposal</p>
+		<img class="absolute-element"
+		     style="left: 478px; top: 130px; width: 500px; height: 500px; position: absolute; text-align: right; z-index: 4; max-height: none; max-width: none;"
+		     src="https://s3.amazonaws.com/media-p.slid.es/uploads/jeremiahtabing/images/156186/budget_call3.png">
+	</section>
+	<section>&nbsp;<h2 class="absolute-element"
+	                   style="left: 350px; top: 335px; height: 112px; position: absolute; z-index: 4;">
+			<font style="font-size: 112px;">
+				<font color="#f59711">TECHNICAL</font></font>
+		</h2>
 
-	<aside class="notes">
-		Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-	</aside>
-</section>
-
-<!-- Example of nested vertical slides -->
-<section>
-	<section>
-		<h2>Vertical Slides</h2>
-		<p>
-			Slides can be nested inside of other slides,
-			try pressing <a href="#" class="navigate-down">down</a>.
+		<p class="absolute-element"
+		   style="left: 469px; top: 461px; width: 135px; height: 47px; position: absolute; z-index: 9;">
+			<font color="#f59711" style="font-size: 32px;">BUDGET</font>
 		</p>
-		<a href="#" class="image navigate-down">
-			<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-		</a>
-	</section>
-	<section>
-		<h2>Basement Level 1</h2>
-		<p>Press down or up to navigate.</p>
-	</section>
-	<section>
-		<h2>Basement Level 2</h2>
-		<p>Cornify</p>
-		<a class="test" href="http://cornify.com">
-			<img width="280" height="326" src="https://s3.amazonaws.com/hakim-static/reveal-js/cornify.gif" alt="Unicorn">
-		</a>
-	</section>
-	<section>
-		<h2>Basement Level 3</h2>
-		<p>That's it, time to go back up.</p>
-		<a href="#/2" class="image">
-			<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(180deg);">
-		</a>
-	</section>
-</section>
 
-<section>
-	<h2>Slides</h2>
-	<p>
-		Not a coder? No problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slid.es" target="_blank">http://slid.es</a>.
-	</p>
-</section>
-
-<section>
-	<h2>Point of View</h2>
-	<p>
-		Press <strong>ESC</strong> to enter the slide overview.
-	</p>
-	<p>
-		Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
-	</p>
-</section>
-
-<section>
-	<h2>Works in Mobile Safari</h2>
-	<p>
-		Try it out! You can swipe through the slides and pinch your way to the overview.
-	</p>
-</section>
-
-<section>
-	<h2>Marvelous Unordered List</h2>
-	<ul>
-		<li>No order here</li>
-		<li>Or here</li>
-		<li>Or here</li>
-		<li>Or here</li>
-	</ul>
-</section>
-
-<section>
-	<h2>Fantastic Ordered List</h2>
-	<ol>
-		<li>One is smaller than...</li>
-		<li>Two is smaller than...</li>
-		<li>Three!</li>
-	</ol>
-</section>
-
-<section data-markdown>
-	<script type="text/template">
-		## Markdown support
-
-		For those of you who like that sort of thing. Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
-
-		```
-		<section data-markdown>
-			## Markdown support
-
-			For those of you who like that sort of thing.
-			Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
-		</section>
-		```
-	</script>
-</section>
-
-<section id="transitions">
-	<h2>Transition Styles</h2>
-	<p>
-		You can select from different transitions, like: <br>
-		<a href="?transition=cube#/transitions">Cube</a> -
-		<a href="?transition=page#/transitions">Page</a> -
-		<a href="?transition=concave#/transitions">Concave</a> -
-		<a href="?transition=zoom#/transitions">Zoom</a> -
-		<a href="?transition=linear#/transitions">Linear</a> -
-		<a href="?transition=fade#/transitions">Fade</a> -
-		<a href="?transition=none#/transitions">None</a> -
-		<a href="?#/transitions">Default</a>
-	</p>
-</section>
-
-<section id="themes">
-	<h2>Themes</h2>
-	<p>
-		Reveal.js comes with a few themes built in: <br>
-		<a href="?#/themes">Default</a> -
-		<a href="?theme=sky#/themes">Sky</a> -
-		<a href="?theme=beige#/themes">Beige</a> -
-		<a href="?theme=simple#/themes">Simple</a> -
-		<a href="?theme=serif#/themes">Serif</a> -
-		<a href="?theme=night#/themes">Night</a> <br>
-		<a href="?theme=moon.css#/themes">Moon</a> -
-		<a href="?theme=simple.css#/themes">Simple</a> -
-		<a href="?theme=solarized.css#/themes">Solarized</a>
-	</p>
-	<p>
-		<small>
-			* Theme demos are loaded after the presentation which leads to flicker. In production you should load your theme in the <code>&lt;head&gt;</code> using a <code>&lt;link&gt;</code>.
-		</small>
-	</p>
-</section>
-
-<section>
-	<h2>Global State</h2>
-	<p>
-		Set <code>data-state="something"</code> on a slide and <code>"something"</code>
-		will be added as a class to the document element when the slide is open. This lets you
-		apply broader style changes, like switching the background.
-	</p>
-</section>
-
-<section data-state="customevent">
-	<h2>Custom Events</h2>
-	<p>
-		Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-	</p>
-					<pre><code data-trim contenteditable style="font-size: 18px; margin-top: 20px;">
-							Reveal.addEventListener( 'customevent', function() {
-							console.log( '"customevent" has fired' );
-							} );
-						</code></pre>
-</section>
-
-<section>
-	<section data-background="#007777">
-		<h2>Slide Backgrounds</h2>
-		<p>
-			Set <code>data-background="#007777"</code> on a slide to change the full page background to the given color. All CSS color formats are supported.
+		<p class="absolute-element"
+		   style="left: 604px; top: 460px; width: 321px; height: 73px; position: absolute; z-index: 7;">
+			<font color="#f59711" style="font-size: 72px;">HEARING</font>
 		</p>
-		<a href="#" class="image navigate-down">
-			<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-		</a>
+
+		<p>
+		</p>
+		<img class="absolute-element"
+		     style="top: 31px; width: 362.74px; height: 613.33px; position: absolute; z-index: 5; max-height: none; max-width: none;"
+		     src="https://s3.amazonaws.com/media-p.slid.es/uploads/jeremiahtabing/images/156180/technical_budget_hearing.png">
+		<font class="absolute-element" color="#666666"
+		      style="left: 480px; top: 553px; width: 419px; height: 58px; font-size: 25px; position: absolute; z-index: 6;">Agencies
+			defend their proposals before the technical panel of DBM. DBM then review the proposal and prepare
+			recommendations.</font>
 	</section>
-	<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png">
-		<h2>Image Backgrounds</h2>
-		<pre><code>&lt;section data-background="image.png"&gt;</code></pre>
-	</section>
-	<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" data-background-repeat="repeat" data-background-size="100px">
-		<h2>Repeated Image Backgrounds</h2>
-		<pre><code style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
-	</section>
-</section>
+	<section>&nbsp;
+		<p class="absolute-element"
+		   style="left: 666px; top: 87px; width: 187px; height: 47px; position: absolute; z-index: 4;">
+			<font color="#ec3c3c">REVIEW</font></p>
 
-<section data-transition="linear" data-background="#4d7e65" data-background-transition="slide">
-	<h2>Background Transitions</h2>
-	<p>
-		Pass reveal.js the <code>backgroundTransition: 'slide'</code> config argument to make backgrounds slide rather than fade.
-	</p>
-</section>
+		<p class="absolute-element"
+		   style="left: 558px; top: 2px; width: 384px; height: 73px; position: absolute; z-index: 7;">
+			<font color="#ec3c3c" style="font-size: 72px;">EXECUTIVE</font>
+		</p>
 
-<section data-transition="linear" data-background="#8c4738" data-background-transition="slide">
-	<h2>Background Transition Override</h2>
-	<p>
-		You can override background transitions per slide by using <code>data-background-transition="slide"</code>.
-	</p>
-</section>
+		<img class="absolute-element"
+		     style="left: 628px; top: 127px; width: 501.26px; height: 501.26px; position: absolute; z-index: 4; max-height: none; max-width: none;"
+		     src="https://s3.amazonaws.com/media-p.slid.es/uploads/jeremiahtabing/images/156230/executive_summary4.png">
+		<font class="absolute-element" color="#666666"
+		      style="text-align: right; left: 150px; top: 237px; width: 419px; height: 58px; font-size: 29px; position: absolute; z-index: 6;">Budget
+			recommendations are presented before an Executive Review Board composed of the DBM Secretary and
+			Senior Officials.</font>
 
-<section>
-	<h2>Clever Quotes</h2>
-	<p>
-		These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-			&ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q> and block:
-	</p>
-	<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-		&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-		reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
-	</blockquote>
-</section>
 
-<section>
-	<h2>Pretty Code</h2>
-					<pre><code data-trim contenteditable>
-							function linkify( selector ) {
-							if( supports3DTransforms ) {
-
-							var nodes = document.querySelectorAll( selector );
-
-							for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
-							var node = nodes[i];
-
-							if( !node.className ) {
-							node.className += ' roll';
-							}
-							}
-							}
-							}
-						</code></pre>
-	<p>Courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
-</section>
-
-<section>
-	<h2>Intergalactic Interconnections</h2>
-	<p>
-		You can link between slides internally,
-		<a href="#/2/3">like this</a>.
-	</p>
-</section>
-
-<section>
-	<section>
-		<h2>Fragmented Views</h2>
-		<p>Hit the next arrow...</p>
-		<p class="fragment">... to step through ...</p>
-		<ol>
-			<li class="fragment"><code>any type</code></li>
-			<li class="fragment"><em>of view</em></li>
-			<li class="fragment"><strong>fragments</strong></li>
-		</ol>
-
-		<aside class="notes">
-			This slide has fragments which are also stepped through in the notes window.
-		</aside>
 	</section>
 	<section>
-		<h2>Fragment Styles</h2>
-		<p>There's a few styles of fragments, like:</p>
-		<p class="fragment grow">grow</p>
-		<p class="fragment shrink">shrink</p>
-		<p class="fragment roll-in">roll-in</p>
-		<p class="fragment fade-out">fade-out</p>
-		<p class="fragment highlight-red">highlight-red</p>
-		<p class="fragment highlight-green">highlight-green</p>
-		<p class="fragment highlight-blue">highlight-blue</p>
+		<font color="#ffff00">&nbsp;</font>
+
+		<h2 class="absolute-element"
+		    style="left: 50px; top: 40px; width: 638px; height: 68px; position: absolute; z-index: 4;">
+			<font color="#ffff00">COnSolidation, Validation<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>and Confirmation</font>
+			<br>
+		</h2>
+		<img class="absolute-element"
+		     style="left: 100px; top: 140px; width: 337.33px; height: 337.33px; position: absolute; z-index: 4; max-height: none; max-width: none;" src="https://s3.amazonaws.com/media-p.slid.es/uploads/jeremiahtabing/images/156418/consolidation3.png">
+		<font class="absolute-element" color="#666666"
+		      style="left: 461px; top: 200px; width: 419px; height: 58px; font-size: 24px; position: absolute; z-index: 6;">DBM
+			then consolidates the recommended agency budgets and recommendations into a National Expenditure
+			Program and a Budget of Expenditures and Sources of Financing (BESF). </font>
+	</section>
+	<section>
+		<p class="absolute-element"
+		   style="left: 67px; top: 193px; width: 516px; height: 47px; position: absolute; z-index: 4;">
+			<font color="#f4cccc" style="font-size: 72px;">PRESENTATION TO PRESIDENT</font>
+		</p>
+
+		<p>
+			<img class="absolute-element"
+			     style="left: 570px; top: 311px; width: 352px; height: 352px; position: absolute; z-index: 5; max-height: none; max-width: none;"
+			     src="https://s3.amazonaws.com/media-p.slid.es/uploads/jeremiahtabing/images/156442/presidents_budge2t.png">
+			<img class="absolute-element"
+			     style="left: 546px; top: 228px; width: 147px; height: 439px; position: absolute; z-index: 4; max-height: none; max-width: none;"
+			     src="https://s3.amazonaws.com/media-p.slid.es/uploads/jeremiahtabing/images/156458/man.png">
+		</p>
+		<font class="absolute-element" color="#666666"
+		      style="left: 0px; top: 370px; width: 600px; height: 58px; font-size: 29px; text-align: right; position: absolute; z-index: 6;">The
+			proposed budget is presented by DBM to the President and Cabinet members for refinements. After the president approve the proposed budget the DBM prepares and finalizes the budget to be submitted to
+			the Congress.</font>
 	</section>
 </section>
-
 <section>
-	<h2>Spectacular image!</h2>
-	<a class="image" href="http://lab.hakim.se/meny/" target="_blank">
-		<img width="320" height="299" src="http://s3.amazonaws.com/hakim-static/portfolio/images/meny.png" alt="Meny">
-	</a>
-</section>
+	<section data-background-size="initial">
+		<font style="font-size: 24px;">&nbsp;
+		</font>
+		<h1 style="color: #ffcc00"># 2</h1>
+		<h2 class="absolute-element"
+		    style="padding-top: 150px; z-index: 5;
+			font-size: 112px;">BUDGET LEGISLATION</h2>
 
-<section>
-	<h2>Export to PDF</h2>
-	<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, below is an example that's been uploaded to SlideShare.</p>
-</section>
+	</section>
+	<section>&nbsp;<h2 class="absolute-element"
+	                   style="left: 600px; text-align: left; top: 172px; height: 68px; position: absolute; z-index: 5;">
+			<font color="#ffffff">HOUSE DELIBERATION</font></h2>
+		<p class="absolute-element" color="#f59e5b"
+		      style="text-align: left; left: 600px; top: 324px; font-size: 28px; position: absolute; z-index: 4; max-height: none; max-width: none;">The
+			house of representatives assigns the Presidents budget to the House Appropriations Committee. It
+			will conduct hearing and scrutinize their respective programs.Afterwards it will craft the GAB.
+			After the third reading it will be transferred to the senate. </p>
 
-<section>
-	<h2>Take a Moment</h2>
-	<p>
-		Press b or period on your keyboard to enter the 'paused' mode. This mode is helpful when you want to take distracting slides off the screen
-		during a presentation.
-	</p>
-</section>
+		<img class="absolute-element"
+		     style="left: -50px; top: 9px; height: 608px; position: absolute; z-index: 7; max-height: none; max-width: none;"
+		     src="https://s3.amazonaws.com/media-p.slid.es/uploads/jeremiahtabing/images/156481/house.png">
+	</section>
+	<section>&nbsp;<h2 class="absolute-element"
+	                   style="text-align: right; left: -115px; top: 233px; height: 68px; position: absolute; z-index: 5;">
+			<font color="#ffffff">Senate<br>Deliberation</font>
+		</h2>
+		<img class="absolute-element"
+		     style="left: 345px; top: 50px; width: 608px; height: 608px; position: absolute; z-index: 7; max-height: none; max-width: none;"
+		     src="https://s3.amazonaws.com/media-p.slid.es/uploads/jeremiahtabing/images/156508/house2.png">
+		<p class="absolute-element" color="#f59e5b"
+		      style="left: 57px; top: 389px; font-size: 18px; position: absolute; z-index: 4; max-height: none; max-width: none;">
+			<p color="#6d8bee">Senate will conduct its own Senate deliberations on the budget.</p> </p>
 
-<section>
-	<h2>Stellar Links</h2>
-	<ul>
-		<li><a href="http://slid.es">Try the online editor</a></li>
-		<li><a href="https://github.com/hakimel/reveal.js">Source code on GitHub</a></li>
-		<li><a href="http://twitter.com/hakimel">Follow me on Twitter</a></li>
-	</ul>
-</section>
 
-<section>
-	<h1>THE END</h1>
-	<h3>BY Hakim El Hattab / hakim.se</h3>
-</section>
+	</section>
+	<section>&nbsp;<h2 class="absolute-element"
+	                   style="top: 95px; height: 68px; z-index: 4;">
+			BICAMERAL DELIBERATION</h2>
 
+
+		<font class="absolute-element" color="#f59e5b"
+		      style="left: 204px; top: 167px; width: 539.73px; height: 166px; font-size: 26px; position: absolute; z-index: 4; max-height: none; max-width: none;">
+			<p align="center"><p color="#b6d7a8">Once both Congress and Senate have finished deliberations
+					they will constitute a panel to the Bicameral Conference Committee. It will harmonize the
+					conflicting provisions of the House and Senate version of GAB </p>
+			</p>
+		</font>
+
+
+		<img class="absolute-element"
+		     style="left: 183px; top: 186px; width: 523.25px; height: 523.25px; position: absolute; z-index: 4; max-height: none; max-width: none;"
+		     src="https://s3.amazonaws.com/media-p.slid.es/uploads/jeremiahtabing/images/156772/bicameral2.png">
+	</section>
+	<section>&nbsp;<img class="absolute-element"
+	                    style="left: 55px; top: 200px; width: 343px; height: 343px; position: absolute; z-index: 4; max-height: none; max-width: none;"
+	                    src="https://s3.amazonaws.com/media-p.slid.es/uploads/jeremiahtabing/images/156537/up.png">&nbsp;
+		<h2 class="absolute-element"
+		    style="left: 482px; top: 127px; height: 68px; position: absolute; z-index: 4;">
+			<font color="#a0e67a">Ratification</font>
+		</h2>
+
+		<h2 class="absolute-element"
+		    style="left: 483px; top: 600px; height: 68px; position: absolute; z-index: 4;">
+			<font color="#a0e67a">&nbsp;Enrollment</font>
+		</h2>
+
+		<font class="absolute-element" color="#f59e5b"
+		      style="left: 439px; top: 316px; height: 166px; font-size: 25px; position: absolute; z-index: 4; max-height: none; max-width: none;">
+			<p align="center">
+				<p color="#ffffff">The bicameral version is submitted to both Houses which will vote to
+					ratify the final GAB. Once submitted to the president for his approval, GAB is considered
+					enrolled </p>
+			</p>
+		</font>
+
+
+	</section>
+	<section>&nbsp;
+		<h2 class="absolute-element"
+		    style="top: 524px; position: absolute; z-index: 4;">VETO
+			message</h2>
+
+
+		<p class="absolute-element" color="#666666"
+		      style="left: 585px; top: 524px; width: 356px; height: 82.16px; font-size: 23px; position: absolute; z-index: 4; max-height: none; max-width: none;">
+			&nbsp;The president has the power to veto some budget items as mandated by the constitution</p>
+
+
+		<img class="absolute-element"
+		     style="left: 249px; top: 172px; width: 450px; height: 309px; position: absolute; z-index: 4; max-height: none; max-width: none;"
+		     src="https://s3.amazonaws.com/media-p.slid.es/uploads/jeremiahtabing/images/156779/veto3.png">
+	</section>
+	<section>&nbsp;<font class="absolute-element"
+	                     style="text-align: left; left: 500px; top: 191px; height: 112px; font-size: 54px; position: absolute; z-index: 4;">
+			&nbsp;<font color="#8e7cc3">ENACTMENT</font>
+		</font>
+
+		<h2 class="absolute-element"
+		    style="left: 215px; top: 110px; width: 223px; height: 115px; position: absolute; z-index: 5;">
+			<font color="#3c3a3a" style="font-size: 112px;">GAA</font>
+		</h2>
+		<img class="absolute-element"
+		     style="left: 1px; top: 14px; width: 601px; height: 601px; position: absolute; z-index: 4; max-height: none; max-width: none;"
+		     src="https://s3.amazonaws.com/media-p.slid.es/uploads/jeremiahtabing/images/156553/enactment2.png">
+		<font class="absolute-element" color="#ffffff"
+		      style="text-align: left; left: 500px; top: 255px; height: 82.16px; font-size: 23px; position: absolute; z-index: 4; max-height: none; max-width: none;">
+			When GAA is not enacted before the fiscal year, the previous years GAA is automatically
+			reenacted.</font>
+
+	</section>
+</section>
+</div>
 </div>
 
-</div>
-
-<script src="js/reveal/lib/js/head.min.js"></script>
-<script src="js/reveal.min.js"></script>
+<?php
+echo $this->Html->script([ 'reveal/lib/js/head.min', 'reveal.min' ])
+?>
 
 <script>
 
@@ -365,10 +285,18 @@
 
 		// Optional libraries used to extend on reveal.js
 		dependencies: [
-			{ src: 'js/reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
-			{ src: 'js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-			{ src: 'js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-			{ src: 'js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+			{ src: 'js/reveal/lib/js/classList.js', condition: function () {
+				return !document.body.classList;
+			} },
+			{ src: 'js/reveal/plugin/highlight/highlight.js', async: true, callback: function () {
+				hljs.initHighlightingOnLoad();
+			} },
+			{ src: 'js/reveal/plugin/zoom-js/zoom.js', async: true, condition: function () {
+				return !!document.body.classList;
+			} },
+			{ src: 'js/reveal/plugin/notes/notes.js', async: true, condition: function () {
+				return !!document.body.classList;
+			} }
 		]
 	});
 

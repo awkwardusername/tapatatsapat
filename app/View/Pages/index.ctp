@@ -12,7 +12,8 @@
 		</div>
 	</div>
 </div>
-<div id="appCarousel" class="carousel slide">
+<div id="appCarousel" class="carousel slide" style="background: url('img/awesomepres.png'); background-size: cover;
+    background-repeat: no-repeat;">
 	<ol class="carousel-indicators">
 		<li data-target="#appCarousel" data-slide-to="0" class="active"></li>
 		<li data-target="#appCarousel" data-slide-to="1"></li>
@@ -24,7 +25,7 @@
 				<div class="container">
 					<div class="row text-right">
 						<div class="col-lg-4">
-							<img data-src="holder.js/250x300" class="img-responsive app-image"/>
+							<a href="process"><img src="img/budget_process_loled2.png" class="img-responsive app-image"/></a>
 						</div>
 						<div class="col-lg-8 app-detail">
 							<h1 class="app-title">The Budget Process</h1>
@@ -47,7 +48,7 @@
 								and test it against our own budget consumption simulator!</p>
 						</div>
 						<div class="col-lg-4">
-							<img data-src="holder.js/250x300" class="img-responsive app-image"/>
+							<a href="make"><img src="img/Make_your_own.png" class="img-responsive app-image"/></a>
 						</div>
 					</div>
 				</div>
@@ -58,7 +59,7 @@
 				<div class="container">
 					<div class="row text-left">
 						<div class="col-lg-4">
-							<img data-src="holder.js/250x300" class="img-responsive app-image"/>
+							<a href="visualize"><img src="img/budget_visualizer.png" class="img-responsive app-image"/></a>
 						</div>
 						<div class="col-lg-8 app-detail">
 							<h1 class="app-title">Budget Visualizer</h1>
@@ -102,7 +103,7 @@
 					<div class="col-xs-6">
 						<div class="row author-item">
 							<strong>
-								<p id="dev-pics-img"><img data-src="holder.js/100x100"/></p>
+								<p id="dev-pics-img"><img src="img/moemoe.png" style="width: 100px; height: 100px;"/></p>
 
 								<p id="dev-name">Mark Jayson<br />
 									<a href="https://twitter.com/the_dead_poetic" class="twitter-follow-button"
@@ -123,7 +124,7 @@
 					<div class="col-xs-6">
 						<div class="row author-item">
 							<strong>
-								<p id="dev-pics-img"><img data-src="holder.js/100x100"/></p>
+								<p id="dev-pics-img"><img src="img/eyegauge.jpg" style="width: 100px; height: 100px;"/></p>
 
 								<p id="dev-name">Allan<br />
 									<a href="https://twitter.com/temotoKun" class="twitter-follow-button"
@@ -147,7 +148,7 @@
 					<div class="col-xs-6">
 						<div class="row author-item">
 							<strong>
-								<p id="dev-pics-img"><img data-src="holder.js/100x100"/></p>
+								<p id="dev-pics-img"><img src="img/robot.png" style="width: 100px; height: 100px;"/></p>
 
 								<p id="dev-name">Jeremiah<br />
 									<a href="https://twitter.com/engjehneer" class="twitter-follow-button"

@@ -12,10 +12,10 @@
 		<?php echo $title_for_layout; ?>
 	</title>
 	<?php
-	echo $this->Html->meta('icon');
 	echo $this->Html->css([ 'bootstrap.min', 'main' ]);
 	echo $this->Html->script('jquery-1.10.1.min');
 	?>
+	<link rel="shortcut icon" href="favicon2.png">
 	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!--[if lt IE 9]>
 	<?php echo $this->Html->script(['respond.min','html5shiv']); ?>
