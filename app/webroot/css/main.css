@@ -276,6 +276,10 @@ code {
     .small-footer {
         padding-top: 20px;
     }
+}
 
-
+@media (max-height: 480px) {
+    #footer {
+        visibility: hidden;
+    }
 }
