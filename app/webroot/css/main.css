@@ -282,4 +282,8 @@ code {
     #footer {
         visibility: hidden;
     }
+
+    .teh-reveal {
+        padding: 0;
+    }
 }
