@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="c4b57316-fe81-44d9-9721-ad79df38bd2c" name="Default" comment="">
       <change type="DELETED" beforePath="C:\xampp\htdocs\TapatAtSapat\app\webroot\js\bootstrap.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/webroot/js/visualize.js" afterPath="$PROJECT_DIR$/app/webroot/js/visualize.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="TapatAtSapat.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -89,7 +90,7 @@
           <file leaf-file-name="visualize.js" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/webroot/js/visualize.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="14" column="13" selection-start="433" selection-end="433" vertical-scroll-proportion="0.33274338" vertical-offset="22" max-vertical-offset="5665">
+                <state line="15" column="10" selection-start="3" selection-end="641" vertical-scroll-proportion="0.39823008" vertical-offset="0" max-vertical-offset="5665">
                   <folding />
                 </state>
               </provider>
@@ -589,7 +590,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="-4" width="1374" height="736" extended-state="6" />
+    <frame x="-4" y="-4" width="1374" height="736" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -820,7 +821,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/webroot/js/visualize.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="13" selection-start="433" selection-end="433" vertical-scroll-proportion="0.33274338" vertical-offset="22" max-vertical-offset="5665">
+        <state line="15" column="10" selection-start="3" selection-end="641" vertical-scroll-proportion="0.39823008" vertical-offset="0" max-vertical-offset="5665">
           <folding />
         </state>
       </provider>
