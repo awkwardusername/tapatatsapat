@@ -4,7 +4,6 @@
     <list default="true" id="c4b57316-fe81-44d9-9721-ad79df38bd2c" name="Default" comment="">
       <change type="DELETED" beforePath="C:\xampp\htdocs\TapatAtSapat\app\webroot\js\bootstrap.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/webroot/css/main.css" afterPath="$PROJECT_DIR$/app/webroot/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="TapatAtSapat.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -134,7 +133,7 @@
           <file leaf-file-name="main.css" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/webroot/css/main.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="289" column="0" selection-start="4638" selection-end="4638" vertical-scroll-proportion="0.22080292" vertical-offset="4664" max-vertical-offset="5318">
+                <state line="286" column="29" selection-start="4639" selection-end="4639" vertical-scroll-proportion="0.13868614" vertical-offset="4664" max-vertical-offset="5318">
                   <folding />
                 </state>
               </provider>
@@ -781,7 +780,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/webroot/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="289" column="0" selection-start="4638" selection-end="4638" vertical-scroll-proportion="0.22080292" vertical-offset="4664" max-vertical-offset="5318">
+        <state line="286" column="29" selection-start="4639" selection-end="4639" vertical-scroll-proportion="0.13868614" vertical-offset="4664" max-vertical-offset="5318">
           <folding />
         </state>
       </provider>
