@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4b57316-fe81-44d9-9721-ad79df38bd2c" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/webroot/js/jquery-ui-1.10.3.custom.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/webroot/js/jquery-ui-1.10.3.custom.min.js" />
       <change type="DELETED" beforePath="C:\xampp\htdocs\TapatAtSapat\app\webroot\js\bootstrap.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/View/Pages/present.ctp" afterPath="$PROJECT_DIR$/app/View/Pages/present.ctp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/webroot/css/process.css" afterPath="$PROJECT_DIR$/app/webroot/css/process.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/View/Pages/make.ctp" afterPath="$PROJECT_DIR$/app/View/Pages/make.ctp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/webroot/css/painter.css" afterPath="$PROJECT_DIR$/app/webroot/css/painter.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/webroot/js/painter.js" afterPath="$PROJECT_DIR$/app/webroot/js/painter.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="TapatAtSapat.iws" />
@@ -62,7 +66,7 @@
       <file leaf-file-name="painter.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/webroot/js/painter.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="12026">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="9506">
               <folding />
             </state>
           </provider>
@@ -89,7 +93,7 @@
       <file leaf-file-name="present.ctp" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/View/Pages/present.ctp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="260" column="89" selection-start="12936" selection-end="12936" vertical-scroll-proportion="0.6530249" vertical-offset="3578" max-vertical-offset="5182">
+            <state line="188" column="14" selection-start="9173" selection-end="11229" vertical-scroll-proportion="0.04587156" vertical-offset="2880" max-vertical-offset="5022">
               <folding>
                 <element signature="n#style#0;n#img#0;n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h1#0;n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -534,7 +538,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1374" height="736" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -544,7 +548,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23352855" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.79721814" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34313726" sideWeight="0.79721814" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -687,7 +691,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/View/Pages/present.ctp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="260" column="89" selection-start="12936" selection-end="12936" vertical-scroll-proportion="0.6530249" vertical-offset="3578" max-vertical-offset="5182">
+        <state line="188" column="14" selection-start="9173" selection-end="11229" vertical-scroll-proportion="0.04587156" vertical-offset="2880" max-vertical-offset="5022">
           <folding>
             <element signature="n#style#0;n#img#0;n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h1#0;n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />

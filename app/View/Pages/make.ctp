@@ -22,16 +22,14 @@ echo $this->Html->css([ 'painter' ]) ?>
         </div>
     </div>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <div id="canvasContainer">
-                </div>
-            </div>
+    <div class="container playplace">
+        <div class="row" id="canvasContainer">
         </div>
     </div>
 
-<?php echo $this->Html->script([ 'jquery-1.10.1.min', 'painter' ]) ?>
+
+
+<?php echo $this->Html->script([ 'jquery-1.10.1.min', 'jquery-ui-1.10.3.custom', 'painter' ]) ?>
 
 <script>
     /**
@@ -42,5 +40,14 @@ echo $this->Html->css([ 'painter' ]) ?>
     var _container = "#canvasContainer";
 
     // initialize our painter now.
-    var painter = new Painter(_container, {tileCount: 10});
+    var painter = new Painter(_container,
+        [
+            { name: "Social Services", color: "#0f0" },
+            { name: "General Public Services", color: "#ff0" },
+            { name: "Debt Burden", color: "#f00" },
+            { name: "Economic Services", color: "#0ff" },
+            { name: "Defense", color: "#00f" }
+        ],
+        {tileCount: 20}
+    );
 </script>
