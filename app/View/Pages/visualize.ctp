@@ -1,5 +1,5 @@
 <?php
-	echo $this->Html->css('visualize', null, ['inline' => 'false']);
+	echo $this->Html->css(['visualize'], null, ['inline' => 'false']);
 ?>
 
 <div class="row visualizer">
@@ -10,4 +10,8 @@
 
 	</div>
 </div>
+
+<?php
+	echo $this->Html->scripts('d3.min')
+?>
 

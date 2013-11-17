@@ -93,8 +93,11 @@ a:visited {
 /* Carousel base class */
 
 /* Declare heights because of positioning of img element */
+.slide {
+    color: #fff2f2;
+}
+
 #appCarousel, #appCarousel .apps-gallery {
-    background: #bbbbbb;
     padding-top: 75px;
 }
 
@@ -124,10 +127,11 @@ a:visited {
 
 .app-title, .app-desc {
     text-align: center;
+    font-size: large;
 }
 
 .app-title {
-    font-size: x-large;
+    font-size: xx-large;
     font-weight: 700;
 }
 
@@ -152,6 +156,10 @@ a:visited {
 .dev-pics #dev-pics-img {
     float: left;
     margin: 5px;
+}
+
+#dev-pics-img .img {
+
 }
 
 .dev-pics #dev-name {
@@ -200,7 +208,9 @@ code {
     }
 
     #appCarousel, #appCarousel .apps-gallery {
-        background: #bbbbbb;
+        background: url('img/awesomepres.png');
+        background-size: cover;
+        background-repeat: no-repeat;
         padding-top: 40px;
     }
 
