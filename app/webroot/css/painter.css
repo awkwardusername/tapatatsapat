@@ -1,17 +1,21 @@
-.playplace {
+body {
     background-color: #fff;
 }
 
-.painter table {
+.content {
+    background-color: #fff;
+}
+
+.painter-canvas {
     margin: 0 auto;
     background-color: #fff;
-    height: 300px;
-    max-height: 300px;
-    width: 300px;
-    max-width: 300px;
+    height: 350px;
+    max-height: 350px;
+    width: 350px;
+    max-width: 350px;
 }
 
-.painter table tr > th {
+.painter-canvas tr > th {
     background-color: #999;
     border: 1px solid #ccc;
 }
@@ -23,6 +27,7 @@
 .painter ul > li {
     display: block;
     clear: right;
+    padding: 8px;
 }
 
 .painter ul > li.selected {
@@ -33,6 +38,16 @@
 .painter ul > li > .budget-name {
     display: block;
     clear: none;
+}
+
+.painter ul > li > .budget-name:before {
+    display: inline-block;
+    content: "\00A0";
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+    vertical-align: middle;
+    border: 1px solid #fff;
 }
 
 .painter ul > li > .budget-money {
@@ -65,26 +80,32 @@
     height: 24px;
 }
 
-.painter table tr > td.b0 {
-    background-color: transparent;
+.painter-canvas tr > td.b0,
+.painter ul > li.b0 .budget-name:before {
+    background-color: #eee;
 }
 
-.painter table tr > td.b1 {
+.painter-canvas tr > td.b1,
+.painter ul > li.b1 .budget-name:before {
     background-color: #0f0;
 }
 
-.painter table tr > td.b2 {
+.painter-canvas tr > td.b2,
+.painter ul > li.b2 .budget-name:before {
     background-color: #ff0;
 }
 
-.painter table tr > td.b3 {
+.painter-canvas tr > td.b3,
+.painter ul > li.b3 .budget-name:before {
     background-color: #f00;
 }
 
-.painter table tr > td.b4 {
+.painter-canvas tr > td.b4,
+.painter ul > li.b4 .budget-name:before {
     background-color: #0ff;
 }
 
-.painter table tr > td.b5 {
+.painter-canvas tr > td.b5,
+.painter ul > li.b5 .budget-name:before {
     background-color: #00f;
 }

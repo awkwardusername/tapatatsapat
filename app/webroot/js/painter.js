@@ -19,7 +19,7 @@
 
         /* ----- fields ----- */
 
-        var _b = arguments.length > 2 ? b : 0;
+        var _b = b !== undefined ? b : 0;
         var _e = jQuery("<td></td>");
 
 
@@ -196,18 +196,19 @@
      */
 
 
-    var PainterCanvas = function (options) {
+    var PainterCanvas = function (p, options) {
 
 
         /* ===== instance members ===== */
 
         /* ----- fields ----- */
 
+        var _parent = p;
+        var _readOnly = options.readOnly ? options.readOnly : false;
         var _e = jQuery("<table></table>");
-        var _tileCount = options.data ? options.data.length : options.tileCount;
-        var _minSize = 1;
+        var _size = options.data ? options.data.length : options.size;
+        var _minSize = 10;
         var _maxSize = 20;
-        var _headerColor = "#ccc";
         var _width = options.width ? options.width : "75%";
         var _colGroups = [jQuery("<colgroup></colgroup>")];
         var _rows = [];
@@ -239,9 +240,7 @@
         };
 
         var tile = function(x, y) {
-            //if(_cols[x].getTile(y) == _rows[y].getTile(x))
-                return _rows[y].getTile(x);
-            //return null;
+            return _rows[y].getTile(x);
         };
 
         var doGetBudget = function(x, y) {
@@ -261,8 +260,8 @@
         };
 
         var doResize = function(s) {
-            var oldValue = _tileCount;
-            _tileCount = s;
+            var oldValue = _size;
+            _size = s;
             repaint(oldValue - 1);
         };
 
@@ -273,7 +272,7 @@
         };
 
         var animateRow = function(i, smaller) {
-            if(i == _tileCount - (smaller ? 1 : 0))
+            if(i == _size - (smaller ? 1 : 0))
                 return;
             if(smaller)
                 doGetRow(i).el()
@@ -284,7 +283,7 @@
         };
 
         var animateColumn = function(i, smaller) {
-            if(i == _tileCount - (smaller ? 1 : 0))
+            if(i == _size - (smaller ? 1 : 0))
                 return;
 
             if(smaller) {
@@ -328,7 +327,7 @@
         };
 
         var repaint = function(oldValue) {
-            var smaller = _tileCount < oldValue;
+            var smaller = _size < oldValue;
             animateRow(oldValue, smaller);
             animateColumn(oldValue, smaller);
             resizeCanvas();
@@ -353,7 +352,8 @@
                     width: _width
                 })
                 .css({ height: $(this).width() })
-                .appendTo(_e);
+                .addClass("painter-canvas")
+                .appendTo(_parent);
 
             // be responsive when resizing
             $(window).on("resize", function () {
@@ -376,46 +376,93 @@
                 .addClass("row-header")
                 .addClass("col-header")
                 .html("&nbsp;");
-
+/*
+            for(var x = 0; x < _size; x++) {
+                _cols[x].getHeader()
+                    .appendTo(colHeaderRow);
+                if(!_readOnly) {
+                    _cols[x].getHeader()
+                        .bind("mouseup", function() {
+                            _cols[x].setBudget(_currentBudget);
+                        })
+                        .bind("mouseenter", function(e) {
+                            if(e.buttons == 1) {
+                                _cols[x].setBudget(_currentBudget);
+                            }
+                        })
+                        .bind("mousedown", function() {
+                            _cols[x].setBudget(_currentBudget);
+                        });
+                }
+            } */
             $.each(_cols, function(x) {
                 _cols[x].getHeader()
-                    .appendTo(colHeaderRow)
-                    .bind("click", function() {
-                        _cols[x].setBudget(_currentBudget);
-                    });
+                    .appendTo(colHeaderRow);
+                if(!_readOnly) {
+                    _cols[x].getHeader()
+                        .bind("mouseup", function() {
+                            _cols[x].setBudget(_currentBudget);
+                        })
+                        .bind("mouseenter", function(e) {
+                            if(e.buttons == 1) {
+                                _cols[x].setBudget(_currentBudget);
+                            }
+                        })
+                        .bind("mousedown", function() {
+                            _cols[x].setBudget(_currentBudget);
+
+                        });
+                }
             });
 
             $.each(_rows, function (y) {
                 _rows[y].el().appendTo(_e);
-                _rows[y].getHeader().
-                    appendTo(_rows[y].el()).
-                    bind("click", function() {
-                        _rows[y].setBudget(_currentBudget);
-                    });
+                _rows[y].getHeader()
+                    .appendTo(_rows[y].el());
+                if(!_readOnly) {
+                    _rows[y].getHeader()
+                        .bind("mouseup", function() {
+                            _rows[y].setBudget(_currentBudget);
+                        })
+                        .bind("mouseenter", function(e) {
+                            if(e.buttons == 1) {
+                                _rows[y].setBudget(_currentBudget);
+                            }
+                        })
+                        .bind("mousedown", function() {
+                            _rows[y].setBudget(_currentBudget);
+                        });
+                }
                 $.each(_cols, function (x) {
                     _cols[x].el().appendTo(_colGroups[0]);
 
-                    tile(x, y)
-                        .el()
-                        .appendTo(_rows[y].el())
-                        /*
-                        .css({
-                            width: 100 / _tileCount + "%",
-                            height: _canvas.width() / _tileCount + "px"
-                        })
-                        */
-                        .bind("click", evtPaintBudget = function() {
-                            tile(x, y).setBudget(_currentBudget);
-                        })
-                        .bind("mousemove", evtHandleClickDrag = function(e) {
-                            if (e.buttons == 1) {
+                    tile(x, y).el()
+                        .appendTo(_rows[y].el());
+                    if(!_readOnly) {
+                        tile(x, y).el()
+                            .bind("mouseenter", evtHandleClickDrag = function(e) {
+                                if (e.buttons == 1) {
+                                    tile(x, y).setBudget(_currentBudget);
+                                    if(document.selection !== undefined)
+                                        document.selection.removeAllRanges();
+                                }
+                            })
+                            .bind("mouseup", function() {
+                                if(document.selection !== undefined)
+                                    document.selection.removeAllRanges();
+                            })
+                            .bind("mousedown", evtPaintBudget = function() {
                                 tile(x, y).setBudget(_currentBudget);
-                                document.selection.removeAllRanges();
-                            }
-                        })
-                        .bind("mouseup", function() { document.selection.removeAllRanges() });
+                            });
+                    }
                 });
             });
+
+            for(var x = _size; x < _maxSize; x++) {
+                _cols[x].getHeader().hide();
+                _cols[x].getTileElements().hide();
+                _rows[x].el().hide();
+            }
         })();
 
 
@@ -430,17 +477,13 @@
             doSetBudget(x, y, b);
         };
 
-        this.getCurrentBudget = function() {
-            return _currentBudget;
-        }
-
         this.setCurrentBudget = function(b) {
             _currentBudget = b;
         }
 
         this.el = function() { return _e; };
 
-        this.getSize = function() { return _tileCount; };
+        this.getSize = function() { return _size; };
 
         this.setSize = function(s) {
             doResize(s);
@@ -452,11 +495,11 @@
 
         this.getPortion = function(b) {
             var bt = 0;
-            for(var y = 0; y < _tileCount; y++)
-                for(var x = 0; x < _tileCount; x++)
+            for(var y = 0; y < _size; y++)
+                for(var x = 0; x < _size; x++)
                     if(tile(x, y).getBudget() == b)
                         bt++;
-            return bt / Math.pow(_tileCount, 2);
+            return bt / Math.pow(_size, 2);
         };
 
         this.getRow = function(r) {
@@ -486,13 +529,10 @@
 
 
     var Painter = function(e, p, options) {
-        var _canvasCont = jQuery("<div></div>");
-        var _sidebarCont = jQuery("<div></div>");
-
-        var _e = jQuery(e);
+        var _parent = jQuery("#" + e + "Meta");
         var _palette = p;
         var _pe = jQuery("<ul></ul>");
-        var _canvas = new PainterCanvas(options);;
+        var _canvas = new PainterCanvas(jQuery("#" + e + "Canvas"), options);
         var _currentBudget = 1;
         var _totalBudget = 2270000000000;
 
@@ -505,7 +545,7 @@
 
             _pe.find("li").removeClass("selected");
 
-            _pe.find("#palette-" + _currentBudget).addClass("selected");
+            _pe.find(".b" + _currentBudget).addClass("selected");
         };
 
         var updatePalette = function() {
@@ -513,12 +553,12 @@
 
             for(var i in _palette) {
                 _pe
-                    .find("#palette-" + i)
+                    .find(".b" + i)
                     .find(".budget-percent")
                     .text((_canvas.getPortion(i) * 100).toFixed(2));
 
                 _pe
-                    .find("#palette-" + i)
+                    .find(".b" + i)
                     .find(".budget-money")
                     .text((_canvas.getPortion(i) * _totalBudget / 1000000000).toFixed(2) + "B");
             }
@@ -528,31 +568,20 @@
             updatePalette();
         };
 
-        _e.attr("class", "painter");
-
-        _canvasCont
-            .attr("class", "col-xs-8")
-            .appendTo(_e);
-
-        _canvas.el().appendTo(_canvasCont);
-
-        _sidebarCont
-            .attr("class", "col-xs-4")
-            .appendTo(_e);
-
         _palette.unshift({ name: "Unallocated", color: "transparent" });
-
-        _pe
-            .appendTo(_sidebarCont);
 
         for(var sz = _canvas.getMinimumSize(); sz <= _canvas.getMaximumSize(); sz++)
             _sze
                 .append(jQuery("<option></option>")
                     .val(sz)
                     .text(sz + "x" + sz)
-                    .attr("selected", function() { return sz == _canvas.getSize(); }))
-                .bind("change", function() { _canvas.setSize(jQuery(this).val()); });
-        _sze.appendTo(_sidebarCont);
+                    .attr("selected", function() { return sz == _size; }))
+                .bind("change", function() { _canvas.setSize(jQuery(this).val()); })
+        _parent
+            .append(jQuery("<h3></h3>").text("Resolution"))
+            .append(_sze)
+            .append(jQuery("<h3></h3>").text("Palette"))
+            .append(_pe);
 
         $.each(_palette, function(i) {
             var pcol = jQuery("<li></li>");
@@ -570,7 +599,7 @@
                 .appendTo(pcol);
 
             pcol
-                .attr("id", "palette-" + i)
+                .attr("class", "b" + i)
                 .bind("click", function() {
                     doSetCurrentBudget(i);
                 })
@@ -581,13 +610,33 @@
         });
 
         for(var y = 0; y < _canvas.getMaximumSize(); y++) {
-            _canvas.getRow(y).getHeader().bind("click", evtUpdatePalette);
+            _canvas.getRow(y).getHeader()
+                .bind("mouseup", evtUpdatePalette)
+                .bind("mouseenter", function(e) {
+                    if (e.buttons == 1) {
+                        evtUpdatePalette(e);
+                    }
+                })
+                .bind("mousedown", evtUpdatePalette);
             for(var x = 0; x < _canvas.getMaximumSize(); x++) {
-                _canvas.getColumn(x).getHeader().bind("click", evtUpdatePalette);
+                _canvas.getColumn(x).getHeader()
+                    .bind("mouseup", evtUpdatePalette)
+                    .bind("mouseenter", function(e) {
+                        if (e.buttons == 1) {
+                            evtUpdatePalette(e);
+                        }
+                    })
+
+                    .bind("mousedown", evtUpdatePalette);
 
                 _canvas.getTile(x, y).el()
-                    .bind("click", evtUpdatePalette)
                     .bind("mouseup", evtUpdatePalette)
+                    .bind("mouseenter", function(e) {
+                        if (e.buttons == 1) {
+                            evtUpdatePalette(e);
+                        }
+                    })
+                    .bind("mousedown", evtUpdatePalette);
             }
         }
 

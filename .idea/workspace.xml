@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4b57316-fe81-44d9-9721-ad79df38bd2c" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/View/Layouts/default.ctp" afterPath="$PROJECT_DIR$/app/View/Layouts/default.ctp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/View/Pages/make.ctp" afterPath="$PROJECT_DIR$/app/View/Pages/make.ctp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/webroot/css/painter.css" afterPath="$PROJECT_DIR$/app/webroot/css/painter.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/webroot/js/painter.js" afterPath="$PROJECT_DIR$/app/webroot/js/painter.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -10,9 +12,9 @@
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="c4b57316-fe81-44d9-9721-ad79df38bd2c" time="1384639634266" ignored="false" />
     <file path="/AppController.php" changelist="c4b57316-fe81-44d9-9721-ad79df38bd2c" time="1384573223061" ignored="false" />
-    <file path="/painter.js" changelist="c4b57316-fe81-44d9-9721-ad79df38bd2c" time="1384644702024" ignored="false" />
-    <file path="/painter.css" changelist="c4b57316-fe81-44d9-9721-ad79df38bd2c" time="1384643752547" ignored="false" />
-    <file path="/make.ctp" changelist="c4b57316-fe81-44d9-9721-ad79df38bd2c" time="1384632107492" ignored="false" />
+    <file path="/painter.js" changelist="c4b57316-fe81-44d9-9721-ad79df38bd2c" time="1384659148530" ignored="false" />
+    <file path="/painter.css" changelist="c4b57316-fe81-44d9-9721-ad79df38bd2c" time="1384659783627" ignored="false" />
+    <file path="/make.ctp" changelist="c4b57316-fe81-44d9-9721-ad79df38bd2c" time="1384658455275" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,16 +41,16 @@
       <file leaf-file-name="PagesController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Controller/PagesController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="0" selection-start="216" selection-end="216" vertical-scroll-proportion="-7.5">
+            <state line="8" column="0" selection-start="136" selection-end="136" vertical-scroll-proportion="-5.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="painter.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="painter.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/webroot/js/painter.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="524" column="10" selection-start="13127" selection-end="13127" vertical-scroll-proportion="0.63418806">
+            <state line="396" column="16" selection-start="9574" selection-end="9574" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -56,10 +58,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="painter.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="painter.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/webroot/css/painter.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="19" selection-start="736" selection-end="736" vertical-scroll-proportion="0.0">
+            <state line="29" column="17" selection-start="427" selection-end="427" vertical-scroll-proportion="0.74358976">
               <folding />
             </state>
           </provider>
@@ -68,16 +70,7 @@
       <file leaf-file-name="make.ctp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/View/Pages/make.ctp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="35" selection-start="703" selection-end="703" vertical-scroll-proportion="-2.125">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.ctp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/View/Pages/index.ctp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="65" column="113" selection-start="2296" selection-end="2296" vertical-scroll-proportion="-8.041667">
+            <state line="63" column="52" selection-start="1817" selection-end="1817" vertical-scroll-proportion="-32.875">
               <folding />
             </state>
           </provider>
@@ -120,8 +113,8 @@
         <option value="$PROJECT_DIR$/app/Controller/AppController.php" />
         <option value="$PROJECT_DIR$/app/View/Layouts/default.ctp" />
         <option value="$PROJECT_DIR$/app/View/Pages/make.ctp" />
-        <option value="$PROJECT_DIR$/app/webroot/css/painter.css" />
         <option value="$PROJECT_DIR$/app/webroot/js/painter.js" />
+        <option value="$PROJECT_DIR$/app/webroot/css/painter.css" />
       </list>
     </option>
   </component>
@@ -196,6 +189,82 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="tapatatsapat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TapatAtSapat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tapatatsapat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TapatAtSapat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tapatatsapat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="View" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TapatAtSapat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tapatatsapat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="View" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Layouts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TapatAtSapat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tapatatsapat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="View" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -370,11 +439,6 @@
     </PATH>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/webroot/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="30" selection-start="1654" selection-end="1654" vertical-scroll-proportion="0.94690263" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/webroot/css/reveal.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="775" column="20" selection-start="19742" selection-end="19742" vertical-scroll-proportion="0.94690263" />
@@ -420,11 +484,6 @@
         <state line="18" column="30" selection-start="377" selection-end="377" vertical-scroll-proportion="0.48128343" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/View/Layouts/default.ctp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="4" selection-start="2961" selection-end="2961" vertical-scroll-proportion="0.69160587" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/webroot/js/jquery-ui-1.10.3.custom.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1300" column="31" selection-start="32781" selection-end="32781" vertical-scroll-proportion="-2.2212067">
@@ -434,17 +493,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Controller/PagesController.php">
+    <entry file="file://$PROJECT_DIR$/app/View/Layouts/default.ctp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="216" selection-end="216" vertical-scroll-proportion="-7.5">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/View/Pages/make.ctp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="35" selection-start="703" selection-end="703" vertical-scroll-proportion="-2.125">
-          <folding />
+        <state line="20" column="61" selection-start="642" selection-end="642" vertical-scroll-proportion="0.520073">
+          <folding>
+            <marker date="1384655077270" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1384655077270" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -453,24 +508,45 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="113" selection-start="2296" selection-end="2296" vertical-scroll-proportion="-8.041667">
+        <state line="65" column="113" selection-start="2296" selection-end="2296" vertical-scroll-proportion="-2.426025">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/webroot/css/painter.css">
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/common.rnc">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="19" selection-start="736" selection-end="736" vertical-scroll-proportion="0.0">
+        <state line="123" column="23" selection-start="3271" selection-end="3271" vertical-scroll-proportion="0.33333334">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Controller/PagesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="0" selection-start="136" selection-end="136" vertical-scroll-proportion="-5.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/View/Pages/make.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="63" column="52" selection-start="1817" selection-end="1817" vertical-scroll-proportion="-32.875">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/webroot/js/painter.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="524" column="10" selection-start="13127" selection-end="13127" vertical-scroll-proportion="0.63418806">
+        <state line="396" column="16" selection-start="9574" selection-end="9574" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/webroot/css/painter.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="17" selection-start="427" selection-end="427" vertical-scroll-proportion="0.74358976">
+          <folding />
         </state>
       </provider>
     </entry>
