@@ -93,7 +93,7 @@
 						who
 						consumes more time outside school, than inside classes. But really, we take our studies to
 						heart. We
-						deal with <a href="#">competitions</a>, <a href="#">hackathons</a>, and <a href="#">action
+						deal with <a href="https://www.facebook.com/ricehackathon">competitions</a>, <a href="http://www.bigdataph.trendmicro.com/">hackathons</a>, and <a href="https://www.youtube.com/watch?v=Xt_OgYMQFRY">action
 							movies</a>.
 						:D</p>
 				</blockquote>
