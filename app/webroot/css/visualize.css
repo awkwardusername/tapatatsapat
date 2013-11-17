@@ -1,71 +1,46 @@
-.visualizer {
-    position: absolute;
-    display: block;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    padding: 50px 0 60px 0;
-    margin: 0;
+#main {
+    float: left;
+    width: 750px;
 }
 
-.visualizer .sidebar {
-    background: #f3f3f3;
-    height: 100%;
+.sidebar h1 {
+    width: 100px;
+    color: #fff;
+    padding-left: 40%;
+    padding-top: 50%;
 }
 
-.visualizer .viewport {
-    background: #333333;
-    height: 100%;
-    padding: 0;
+#sequence {
+    width: 600px;
+    height: 70px;
 }
 
-#chart {
-    width: 620px;
-    height: 500px;
-    background: #bbb;
+#legend {
+    padding: 10px 0 0 3px;
 }
 
-text {
-    pointer-events: none;
-}
-
-.grandparent text { /* header text */
-    font-weight: bold;
-    font-size: medium;
-    font-family: "Open Sans", Helvetica, Arial, sans-serif;
-}
-
-rect {
-    fill: none;
-    stroke: #fff;
-}
-
-rect.parent,
-.grandparent rect {
-    stroke-width: 2px;
-}
-
-.grandparent rect {
+#sequence text, #legend text {
+    font-weight: 600;
     fill: #fff;
 }
 
-.children rect.parent,
-.grandparent rect {
-    cursor: pointer;
+#chart {
+    position: relative;
 }
 
-rect.parent {
-    pointer-events: all;
+#chart path {
+    stroke: #fff;
 }
 
-.children:hover rect.child,
-.grandparent:hover rect {
-    fill: #aaa;
+#explanation {
+    position: absolute;
+    top: 260px;
+    left: 305px;
+    text-align: center;
+    color: #666;
+    z-index: -1;
 }
 
-.textdiv { /* text in the boxes */
-    font-size: medium;
-    padding: 5px;
-    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+#percentage {
+    font-size: 2.5em;
 }
