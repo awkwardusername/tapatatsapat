@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c4b57316-fe81-44d9-9721-ad79df38bd2c" name="Default" comment="">
       <change type="DELETED" beforePath="C:\xampp\htdocs\TapatAtSapat\app\webroot\js\bootstrap.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/webroot/css/visualize.css" afterPath="$PROJECT_DIR$/app/webroot/css/visualize.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/View/Pages/visualize.ctp" afterPath="$PROJECT_DIR$/app/View/Pages/visualize.ctp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/webroot/js/visualize.js" afterPath="$PROJECT_DIR$/app/webroot/js/visualize.js" />
     </list>
     <ignored path="TapatAtSapat.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,10 +31,10 @@
     <splitter split-orientation="horizontal" split-proportion="0.6695821">
       <split-first>
         <leaf>
-          <file leaf-file-name="visualize.css" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="visualize.css" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/webroot/css/visualize.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="9" column="21" selection-start="139" selection-end="139" vertical-scroll-proportion="0.23893805" vertical-offset="0" max-vertical-offset="1240">
+                <state line="15" column="1" selection-start="192" selection-end="192" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1240">
                   <folding />
                 </state>
               </provider>
@@ -88,10 +85,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="visualize.js" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="visualize.js" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/webroot/js/visualize.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="61" column="36" selection-start="1772" selection-end="1772" vertical-scroll-proportion="-20.4" vertical-offset="405" max-vertical-offset="5640">
+                <state line="8" column="19" selection-start="262" selection-end="262" vertical-scroll-proportion="0.22222222" vertical-offset="0" max-vertical-offset="5640">
                   <folding />
                 </state>
               </provider>
@@ -227,8 +224,8 @@
         <option value="$PROJECT_DIR$/app/View/Pages/index.ctp" />
         <option value="$PROJECT_DIR$/app/View/Layouts/default.ctp" />
         <option value="$PROJECT_DIR$/app/View/Pages/visualize.ctp" />
-        <option value="$PROJECT_DIR$/app/webroot/js/visualize.js" />
         <option value="$PROJECT_DIR$/app/webroot/css/visualize.css" />
+        <option value="$PROJECT_DIR$/app/webroot/js/visualize.js" />
       </list>
     </option>
   </component>
@@ -804,13 +801,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/webroot/js/visualize.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="36" selection-start="1772" selection-end="1772" vertical-scroll-proportion="-20.4" vertical-offset="405" max-vertical-offset="5640">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/View/Pages/visualize.ctp">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="25" selection-start="180" selection-end="180" vertical-scroll-proportion="-1.8367347" vertical-offset="0" max-vertical-offset="801">
@@ -822,7 +812,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/webroot/css/visualize.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="21" selection-start="139" selection-end="139" vertical-scroll-proportion="0.23893805" vertical-offset="0" max-vertical-offset="1240">
+        <state line="15" column="1" selection-start="192" selection-end="192" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1240">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/webroot/js/visualize.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="19" selection-start="262" selection-end="262" vertical-scroll-proportion="0.22222222" vertical-offset="0" max-vertical-offset="5640">
           <folding />
         </state>
       </provider>
