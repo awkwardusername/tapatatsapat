@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c4b57316-fe81-44d9-9721-ad79df38bd2c" name="Default" comment="">
       <change type="DELETED" beforePath="C:\xampp\htdocs\TapatAtSapat\app\webroot\js\bootstrap.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/View/Layouts/default.ctp" afterPath="$PROJECT_DIR$/app/View/Layouts/default.ctp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/webroot/js/visualize.js" afterPath="$PROJECT_DIR$/app/webroot/js/visualize.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="TapatAtSapat.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -96,10 +95,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="present.ctp" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="present.ctp" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/View/Pages/present.ctp">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="167" column="108" selection-start="7815" selection-end="7815" vertical-scroll-proportion="3.367347" vertical-offset="2670" max-vertical-offset="6126">
+                <state line="152" column="10" selection-start="7172" selection-end="7172" vertical-scroll-proportion="0.49418604" vertical-offset="2595" max-vertical-offset="6126">
                   <folding>
                     <element signature="n#style#0;n#img#0;n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#h1#0;n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -135,6 +134,7 @@
                     <element signature="n#style#0;n#h1#0;n#section#0;n#section#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#h2#0;n#section#0;n#section#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#h2#0;n#section#1;n#section#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#p#0;n#section#1;n#section#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#img#0;n#section#1;n#section#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#h2#0;n#section#2;n#section#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#img#0;n#section#2;n#section#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -159,10 +159,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="default.ctp" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="default.ctp" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/View/Layouts/default.ctp">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="90" column="36" selection-start="3812" selection-end="3812" vertical-scroll-proportion="2.107209" vertical-offset="435" max-vertical-offset="2371">
+                <state line="88" column="116" selection-start="3776" selection-end="3776" vertical-scroll-proportion="-4.375" vertical-offset="1215" max-vertical-offset="2371">
                   <folding>
                     <marker date="1384671533997" expanded="true" signature="718:764" placeholder="..." />
                   </folding>
@@ -219,7 +219,6 @@
         <option value="$PROJECT_DIR$/app/Controller/AppController.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/app/webroot/css/process.css" />
-        <option value="$PROJECT_DIR$/app/View/Pages/present.ctp" />
         <option value="$PROJECT_DIR$/app/webroot/css/painter.css" />
         <option value="$PROJECT_DIR$/app/View/Pages/make.ctp" />
         <option value="$PROJECT_DIR$/app/webroot/css/main.css" />
@@ -228,6 +227,7 @@
         <option value="$PROJECT_DIR$/app/webroot/css/visualize.css" />
         <option value="$PROJECT_DIR$/app/webroot/js/visualize.js" />
         <option value="$PROJECT_DIR$/app/View/Layouts/default.ctp" />
+        <option value="$PROJECT_DIR$/app/View/Pages/present.ctp" />
       </list>
     </option>
   </component>
@@ -756,9 +756,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/View/Layouts/default.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="88" column="116" selection-start="3776" selection-end="3776" vertical-scroll-proportion="-4.375" vertical-offset="1215" max-vertical-offset="2371">
+          <folding>
+            <marker date="1384671533997" expanded="true" signature="718:764" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/View/Pages/present.ctp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="167" column="108" selection-start="7815" selection-end="7815" vertical-scroll-proportion="3.367347" vertical-offset="2670" max-vertical-offset="6126">
+        <state line="152" column="10" selection-start="7172" selection-end="7172" vertical-scroll-proportion="0.49418604" vertical-offset="2595" max-vertical-offset="6126">
           <folding>
             <element signature="n#style#0;n#img#0;n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h1#0;n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -794,6 +803,7 @@
             <element signature="n#style#0;n#h1#0;n#section#0;n#section#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h2#0;n#section#0;n#section#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h2#0;n#section#1;n#section#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#section#1;n#section#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#section#1;n#section#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h2#0;n#section#2;n#section#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#section#2;n#section#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -813,15 +823,6 @@
             <element signature="n#style#0;n#font#0;n#h2#0;n#section#6;n#section#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#section#6;n#section#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#font#1;n#section#6;n#section#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/View/Layouts/default.ctp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="90" column="36" selection-start="3812" selection-end="3812" vertical-scroll-proportion="2.107209" vertical-offset="435" max-vertical-offset="2371">
-          <folding>
-            <marker date="1384671533997" expanded="true" signature="718:764" placeholder="..." />
           </folding>
         </state>
       </provider>
