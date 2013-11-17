@@ -1,26 +1,26 @@
-/**
- * Created by hoshi~ on 11/16/13.
- */
+    /**
+     * Created by hoshi~ on 11/16/13.
+     */
 
-$(document).ready(function() {
-    // Hack to make this example display correctly in an iframe on bl.ocks.org
-    d3.select(self.frameElement).style("height", "700px");
-    // Dimensions of sunburst.
-    var width = 750;
-    var height = 600;
-    var radius = Math.min(width, height) / 2;
+    $(document).ready(function() {
+        // Hack to make this example display correctly in an iframe on bl.ocks.org
+        d3.select(self.frameElement).style("height", "700px");
+        // Dimensions of sunburst.
+        var width = 750;
+        var height = 600;
+        var radius = Math.min(width, height) / 2;
 
-    // Breadcrumb dimensions: width, height, spacing, width of tip/tail.
-    var b = {
-        w: 200, h: 30, s: 3, t: 10
-        };
+        // Breadcrumb dimensions: width, height, spacing, width of tip/tail.
+        var b = {
+            w: 200, h: 30, s: 3, t: 10
+            };
 
-    // Mapping of step names to colors.
-    var colors = {
-        "home": "#5687d1",
-        "product": "#7b615c",
-        "search": "#de783b",
-        "account": "#6ab975",
+        // Mapping of step names to colors.
+        var colors = {
+            "home": "#5687d1",
+            "product": "#7b615c",
+            "search": "#de783b",
+            "account": "#6ab975",
         "other": "#a173d1",
         "end": "#bbbbbb"
         };

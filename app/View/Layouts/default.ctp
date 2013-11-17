@@ -29,14 +29,14 @@
 </head>
 
 <body>
-<div id="fb-root"></div>
+<!--<div id="fb-root"></div>
 <script>(function(d, s, id) {
 		var js, fjs = d.getElementsByTagName(s)[0];
 		if (d.getElementById(id)) return;
 		js = d.createElement(s); js.id = id;
 		js.src = "//connect.facebook.net/fb_LT/all.js#xfbml=1&appId=172167079608784";
 		fjs.parentNode.insertBefore(js, fjs);
-	}(document, 'script', 'facebook-jssdk'));</script>
+	}(document, 'script', 'facebook-jssdk'));</script>-->
 <div id="wrap">
 	<div id="header">
 		<div class="navbar navbar-inverse navbar-fixed-top" id="teh-navbar">
@@ -82,16 +82,13 @@
 		</div>
 		<div class="small-footer visible-xs">
 			<div class="row">
-				<div class="col-xs-3 container">
+				<div class="col-xs-4 container">
 				<?php echo $this->Html->image('PUP-PG_23px.png', [ 'url' => 'https://www.facebook.com/PupProgrammingGuild', 'id' => 'pup-progguild' ]) ?>
 				</div>
-				<div class="col-xs-3 container">
-					<div class="fb-follow" data-href="https://www.facebook.com/PupProgrammingGuild" data-colorscheme="light" data-layout="button_count" data-show-faces="true"></div>
-				</div>
-				<div class="col-xs-3 container">
+				<div class="col-xs-4 container">
 					<?php echo $this->Html->image('data.gov.ph-logo-mini.png', [ 'url' => 'http://data.gov.ph' ]) ?>
 				</div>
-				<div class="col-xs-3 container">
+				<div class="col-xs-4 container">
 					<?php echo $this->Html->image('by-sa-mini.png', [ 'url' => 'http://creativecommons.org/licenses/by-sa/3.0/ph/deed.en_US']) ?>
 				</div>
 			</div>
