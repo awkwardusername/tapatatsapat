@@ -15,8 +15,9 @@ This app is powered by:
 * The [Department of Budget and Management](http://www.dbm.gov.ph)
 
 Also acknowledging the following libraries:
+* [D3.js](http://d3js.org) - Data-Driven Documents
 * [CakePHP](http://www.cakephp.org) - The rapid development PHP framework
-* [Slid.es](https://slid.es) - Present your Ideas
+* [Reveal.js](http://lab.hakim.se/reveal-js) - The HTML Presentation Framework
 * [Moot.it](https://moot.it) - Forums and commenting re-imagined
 * [jQuery](http://jquery.com) - write less, do more. Also packed with [jQuery UI](http://jqueryui.com)
 

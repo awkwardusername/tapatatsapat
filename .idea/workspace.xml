@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="c4b57316-fe81-44d9-9721-ad79df38bd2c" name="Default" comment="">
       <change type="DELETED" beforePath="C:\xampp\htdocs\TapatAtSapat\app\webroot\js\bootstrap.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LICENSE.txt" afterPath="$PROJECT_DIR$/LICENSE.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="TapatAtSapat.iws" />
@@ -98,7 +100,7 @@
           <file leaf-file-name="present.ctp" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/View/Pages/present.ctp">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="152" column="10" selection-start="7172" selection-end="7172" vertical-scroll-proportion="0.49418604" vertical-offset="2595" max-vertical-offset="6126">
+                <state line="127" column="12" selection-start="5332" selection-end="7343" vertical-scroll-proportion="0.029069768" vertical-offset="2280" max-vertical-offset="6126">
                   <folding>
                     <element signature="n#style#0;n#img#0;n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#h1#0;n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -767,7 +769,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/View/Pages/present.ctp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="152" column="10" selection-start="7172" selection-end="7172" vertical-scroll-proportion="0.49418604" vertical-offset="2595" max-vertical-offset="6126">
+        <state line="127" column="12" selection-start="5332" selection-end="7343" vertical-scroll-proportion="0.029069768" vertical-offset="2280" max-vertical-offset="6126">
           <folding>
             <element signature="n#style#0;n#img#0;n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h1#0;n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
