@@ -88,8 +88,7 @@
 			<div class="col-md-7" id="asduff">
 				<h3>We're the PUP Programming Guild,</h3>
 				<blockquote>
-					<p>- and are a bunch of students from <a href="http://www.pup.edu.ph"
-					                                         title="Polytechnic University of the Philippines">PUP</a>
+					<p>- and are a bunch of students from <a href="http://www.pup.edu.ph" title="Polytechnic University of the Philippines">PUP</a>
 						who
 						consumes more time outside school, than inside classes. But really, we take our studies to
 						heart. We
@@ -137,7 +136,7 @@
 												js.src = p + '://platform.twitter.com/widgets.js';
 												fjs.parentNode.insertBefore(js, fjs);
 											}
-										}(document, 'script', 'twitter-wjs');</script>
+										}(document, 'script', 'twitter-wjs');</script><div class="fb-follow" data-href="http://www.facebook.com/existencemodulus" data-colorscheme="light" data-layout="button" data-show-faces="true"></div>
 								</p>
 							</strong>
 						</div>
@@ -148,7 +147,7 @@
 					<div class="col-xs-6">
 						<div class="row author-item">
 							<strong>
-								<p id="dev-pics-img"><img src="img/robot.png" style="width: 100px; height: 100px;"/></p>
+								<p id="dev-pics-img"><img src="img/yuzuko2.png" style="width: 100px; height: 100px;"/></p>
 
 								<p id="dev-name">Jeremiah<br />
 									<a href="https://twitter.com/engjehneer" class="twitter-follow-button"
