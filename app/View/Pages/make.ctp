@@ -11,7 +11,7 @@ echo $this->Html->css([ 'painter' ]) ?>
 <link rel="stylesheet" type="text/css" href="//cdn.moot.it/1/moot.css">
 <script src="//cdn.moot.it/1/moot.min.js"></script>
 
-    <div class="jumbotron" id="welcome-screen">
+    <div class="jumbotron" id="welcome-screen" style="color: #333">
         <div class="container">
             <div class="row">
                 <div class="col-xs-8">

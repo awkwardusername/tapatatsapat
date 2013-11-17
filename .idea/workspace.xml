@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c4b57316-fe81-44d9-9721-ad79df38bd2c" name="Default" comment="">
       <change type="DELETED" beforePath="C:\xampp\htdocs\TapatAtSapat\app\webroot\js\bootstrap.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/webroot/css/painter.css" afterPath="$PROJECT_DIR$/app/webroot/css/painter.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/View/Pages/make.ctp" afterPath="$PROJECT_DIR$/app/View/Pages/make.ctp" />
     </list>
     <ignored path="TapatAtSapat.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -42,11 +41,22 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="visualize.ctp" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="visualize.ctp" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/View/Pages/visualize.ctp">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="58" column="28" selection-start="1616" selection-end="1616" vertical-scroll-proportion="1.744186" vertical-offset="0" max-vertical-offset="4431">
+                <state line="5" column="28" selection-start="143" selection-end="143" vertical-scroll-proportion="-1.5306122" vertical-offset="0" max-vertical-offset="4431">
                   <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="make.ctp" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/app/View/Pages/make.ctp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="13" column="65" selection-start="322" selection-end="322" vertical-scroll-proportion="0.22181146" vertical-offset="0" max-vertical-offset="2191">
+                  <folding>
+                    <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -161,19 +171,19 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/webroot/css/main.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="60" column="1" selection-start="1092" selection-end="1092" vertical-scroll-proportion="0.0" vertical-offset="638" max-vertical-offset="5238">
+                <state line="69" column="21" selection-start="1308" selection-end="1308" vertical-scroll-proportion="0.41186735" vertical-offset="1009" max-vertical-offset="5238">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="painter.css" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="painter.css" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/webroot/css/painter.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="1" column="16" selection-start="23" selection-end="23" vertical-scroll-proportion="0.025597269" vertical-offset="0" max-vertical-offset="2431">
+                <state line="1" column="16" selection-start="23" selection-end="23" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2431">
                   <folding />
                 </state>
               </provider>
@@ -199,7 +209,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/View/Layouts/null.ctp" />
         <option value="$PROJECT_DIR$/app/Config/routes.php" />
         <option value="$PROJECT_DIR$/app/Config/core.php" />
         <option value="$PROJECT_DIR$/app/View/Pages/process.ctp" />
@@ -210,11 +219,12 @@
         <option value="$PROJECT_DIR$/app/View/Pages/present.ctp" />
         <option value="$PROJECT_DIR$/app/webroot/js/visualize.js" />
         <option value="$PROJECT_DIR$/app/View/Pages/index.ctp" />
-        <option value="$PROJECT_DIR$/app/webroot/css/main.css" />
         <option value="$PROJECT_DIR$/app/View/Layouts/default.ctp" />
         <option value="$PROJECT_DIR$/app/webroot/css/visualize.css" />
         <option value="$PROJECT_DIR$/app/View/Pages/visualize.ctp" />
         <option value="$PROJECT_DIR$/app/webroot/css/painter.css" />
+        <option value="$PROJECT_DIR$/app/webroot/css/main.css" />
+        <option value="$PROJECT_DIR$/app/View/Pages/make.ctp" />
       </list>
     </option>
   </component>
@@ -638,11 +648,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Config/bootstrap.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="110" column="3" selection-start="5221" selection-end="5221" vertical-scroll-proportion="4.5416665" vertical-offset="1414" max-vertical-offset="2362" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="20" selection-start="265" selection-end="265" vertical-scroll-proportion="0.2920354" vertical-offset="0" max-vertical-offset="940" />
@@ -788,22 +793,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/View/Pages/visualize.ctp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="28" selection-start="1616" selection-end="1616" vertical-scroll-proportion="1.744186" vertical-offset="0" max-vertical-offset="4431">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/webroot/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="1" selection-start="1092" selection-end="1092" vertical-scroll-proportion="0.0" vertical-offset="638" max-vertical-offset="5238">
+        <state line="5" column="28" selection-start="143" selection-end="143" vertical-scroll-proportion="-1.5306122" vertical-offset="0" max-vertical-offset="4431">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/webroot/css/painter.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="16" selection-start="23" selection-end="23" vertical-scroll-proportion="0.025597269" vertical-offset="0" max-vertical-offset="2431">
+        <state line="1" column="16" selection-start="23" selection-end="23" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2431">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/webroot/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="69" column="21" selection-start="1308" selection-end="1308" vertical-scroll-proportion="0.41186735" vertical-offset="1009" max-vertical-offset="5238">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/View/Pages/make.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="65" selection-start="322" selection-end="322" vertical-scroll-proportion="0.22181146" vertical-offset="0" max-vertical-offset="2191">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
